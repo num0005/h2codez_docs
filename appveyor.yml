@@ -37,14 +37,14 @@ on_finish:
 
     git checkout --orphan gh-pages
 
-    robocopy ../output ../deploy /COPYALL /E
+    robocopy ../output ../deploy /E /is /it & cmd /c "exit /b 0"
 
 
     git add .
 
     git config --global user.email "num0005@appveyor.deploy"
 
-    git config --global user.name "Your Name"
+    git config --global user.name "Site Deployer"
 
     git commit -m "site deployment" -n --no-gpg-sign
 
