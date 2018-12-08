@@ -49,6 +49,3 @@ on_success:
     git commit -m "site deployment" -n --no-gpg-sign
 
     git push origin gh-pages --force
-    
-artifacts:
-- path: ../output
