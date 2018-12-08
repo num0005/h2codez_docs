@@ -1,0 +1,12 @@
+title:      Install
+desc:       How to install H2Codez
+template:   document
+nav:        Install>DAEConverter
+percent:    100
+date:       2018/12/07
+authors:    General_101
+
+The DAEConverter is a program that we will be using in order to convert rigged meshs exported as DAE files into render_model tags for Halo 2. Click on the link [here](https://cdn.discordapp.com/attachments/434382924700319745/519273028144857108/daeconverter.7z) to download the files.
+Once you have the files go ahead and place daeconverter.exe and assimp.dll in the root directory of your map editor folder. The H2Codez launcher will have some UI to make compiling simplier.
+
+
