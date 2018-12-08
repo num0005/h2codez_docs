@@ -26,7 +26,7 @@ build_script:
 
 
     docnado --html ../output
-on_finish:
+on_success:
 - cmd: >-
     git config --global credential.helper store
 
@@ -49,3 +49,6 @@ on_finish:
     git commit -m "site deployment" -n --no-gpg-sign
 
     git push origin gh-pages --force
+    
+artifacts:
+- path: ../output
