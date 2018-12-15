@@ -32,7 +32,7 @@ b_frame
 Lets break down this section so that everything is clear.
 ```markdown
 (JMS Version Number)
-(Model Scale Value)
+(Node List Checksum)
 (Frame Count)
 (Frame Name)
 (Child Frame)
