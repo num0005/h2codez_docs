@@ -1,7 +1,7 @@
 title:      Render Model Tags
 desc:       Making render_model tags through converted BSP geometry.
 template:   document
-nav:        Render Model>BSP Conversion
+nav:        H2Tool>Render Model>BSP Conversion
 percent:    100
 date:       2018/12/07
 authors:    General_101
