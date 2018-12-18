@@ -1,4 +1,4 @@
-title:      Render Model Tags
+title:      Render Model BSP
 desc:       Making render_model tags through converted BSP geometry.
 template:   document
 nav:        H2Tool>Render Model>BSP Conversion
