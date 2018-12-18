@@ -1,4 +1,4 @@
-title:      Render Model Tags
+title:      Render Model
 desc:       Making render_model tags through converted DAE files.
 template:   document
 nav:        H2Tool>Render Model>DAE Conversion
