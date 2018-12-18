@@ -10,41 +10,58 @@ In this guide we will go over exporting the needed skeleton from Adjutant, setti
 
 # Links
 
-Adjutant - http://forum.halomaps.org/index.cfm?page=topic&topicID=45590
-An asset extractor for various Halo games. This is the program we will be using to extract skeletons from the Halo 2 Xbox(H2X) version of the game. There is no program that can do this for Halo 2 Vista(H2V) so this is how we need to go about it. Just scroll down the page to find that tinyurl link that should take you to a Mega download.
+[Adjutant](http://forum.halomaps.org/index.cfm?page=topic&topicID=45590)
 
-Halo Maps Files - https://haloce3.com/xmf/
-A link to various map files from various Halo Games. Keep in mind you will need to at least have all the resource maps for Halo 2 to extract things properly. This includes shared.map, single_player_shared.map, and mainmenu.map. I would recommend downloading every Halo 2 map and placing them all in the same folder for complete access to the Halo 2 assets available to us.
+An asset extractor for various Halo games. This is the program we will be using to extract skeletons from the Halo 2 Xbox(H2X) version of the game. There is no program that can do this for Halo 2 Vista(H2V) so this is how we need to go about it. 
+Just scroll down the page to find that tinyurl link that should take you to a Mega download.
 
-DAE Converter - https://github.com/Project-Cartographer/DaeConverter
+[Halo Maps Files](https://haloce3.com/xmf/)
+
+A link to various map files from various Halo Games. Keep in mind you will need to at least have all the resource maps for Halo 2 to extract things properly. This includes shared.map, single_player_shared.map, and mainmenu.map. 
+I would recommend downloading every Halo 2 map and placing them all in the same folder for complete access to the Halo 2 assets available to us.
+
+[DAE Converter](https://github.com/Project-Cartographer/DaeConverter)
+
 The source code of the program we are using to build our models.
 
-Blender - https://www.blender.org/
+[Blender](https://www.blender.org/)
+
 The modeling program we will be using in this tutorial. Also the only one that will work for sure with our DAE converter. 3DS Max has not been tested cause 3DS Max is for uncool and unloved kids.
 
-Example Model - https://mega.nz/#!kgFGnQpZ!ctIqEpuoUttfArvCH1JXGDzkafk6FxOHWCu5YuGfi1Y
+[Example Model](https://mega.nz/#!kgFGnQpZ!ctIqEpuoUttfArvCH1JXGDzkafk6FxOHWCu5YuGfi1Y)
+
 Our example model for beginners. We will use this to hopefully show you the way around the program
 
-End Result of Example Model - https://mega.nz/#!F8VSAQBa!XN0OQsEKcZT5y7bJYI-sM2Vjs71g_nIxGOB1OA7rlak
+[End Result of Example Model](https://mega.nz/#!F8VSAQBa!XN0OQsEKcZT5y7bJYI-sM2Vjs71g_nIxGOB1OA7rlak)
+
 Our example model that we made except finished if you do not understand a part and need a visual representation.
 
-End Result of Example Armature - https://mega.nz/#!wotgVSRA!fJLFRf0egCoHRCcMtvyAWw88IsqQwgbq5CyoqMgiB3o
+[End Result of Example Armature](https://mega.nz/#!wotgVSRA!fJLFRf0egCoHRCcMtvyAWw88IsqQwgbq5CyoqMgiB3o)
+
 The armature we will need for our skeleton. When you make armatures for different skeletons follow this setup
 
-H2V Tag Extractor - https://halo2.online/threads/tag-extractor-for-magical-doctor-wizard-researchers-only.2076/#post-10618
+[H2V Tag Extractor](https://halo2.online/threads/tag-extractor-for-magical-doctor-wizard-researchers-only.2076/#post-10618)
+
 A useful tool for extracting tags from H2V with varying degrees of quality. We will be using this to extract animations that were not included in H2EK by default.
 
 ***Needed Files***
+
 At least 3DS Max 2013
+
 Blender
+
 H2EK
+
 H2Codez
+
 Adjutant
+
 Halo 2 Xbox Map Files
 
 Remember that what you decide has to fit the default animations for the object you wish to make. While we can't make custom animations we thankfully have access to all animations in the default game by using the H2V tag extractor. For the purposes of this guide you will be given an example model that will reuse the Chief skeleton. 
 
 A. (Insert joke about skeletons having a bone to pick with you)
+
 Let us get our skeleton to reuse for our Chief model. You will want to open up Adjutant and then hit File->New. Browse for the Halo 2 Xbox maps you downloaded and open up shared.map. Once it is open right click on the file list and hit extract all. Select a locations for the content of shared to be dumped. Once that folder is made lets make the necessary plugins to import the models we just dumped. Click on Tools->Generate MaxScripts and click on AMF importer. Do not use EMF as it is a deprecated format. Place the resulting script in an easy access location. Once that is done we can now open up 3DS Max and head on over to the utilities section. Should look like a button with a wrench icon on the right. From there click on MaxScript to reveal a new menu on the button. Click run script and find
 the AMF importer.mse script you generated. This should now show a new menu with a button labeled load model file on the top. Click on this and browse on over to that folder where you dumped the shared.map assets. Go ahead and look for this file found in 
 "Shared Map Asset Dump\objects\characters\masterchief\masterchief.amf"
@@ -53,6 +70,7 @@ Now the rest of the menu will have new buttons that you can mess around with. Go
 Now comes for the final part. Close those two menus and export the result as an FBX. Once that is done you can open up Blender and import the FBX to have the model but more importantly the skeleton for the model. You should see chief and a bunch of triangular looking sticks coming out of him. This is the bones that manipulate the mesh for the spartan model. Go ahead and click on the object in the object list labeled armature and set the scale on the x,y, and z to 1. Then hit your a key twice to select everything and hit CTRL+A. A menu should show up with an option to "apply rotation and scale". Click on that and then you are done! Save this file somewhere for later use. Lets move on to the main show here.
 
 B. Paint some happy little trees up in this mesh
+
 Go ahead and download that example model in links. We are going to use this to learn how to both prepare our models and rig them for ingame use. When you open up the .blend file you should see something that looks like this.
 
 ![](assets/DAEConversionStep1.png)
@@ -106,6 +124,7 @@ weird but make a new scene and add a UV sphere. Repeat the steps you had before 
 Ensure every bone gets some action here and make sure to not cover the same area too many times. This can lead to you getting errors. Doing this is required so that the model can have it's nodes added properly.
 
 C. It's bullshit. I did not forget to change the model classification. I did not. Oh, hi Himanshu.
+
 Now that you're here I hope you fully rigged that model and the armature model you'll be needing. This section will go over importing our model and making the adjustments needed to prepare it for ingame usage. 
 First begin by exporting your rigged model and the armature as separate DAE files with the Master Chief skeleton included. Lets head on over to the data directory of our map editor. The way you want to setup your folder structure
 is simple. Begin by creating your parent folder and naming it what you want the name of the generated render_model to be. Inside this folder we will place our armature.dae file here. THIS FILE NEEDS TO BE NAMED AS SUCH OTHERWISE
