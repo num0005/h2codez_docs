@@ -136,9 +136,13 @@ armature.dae file is. The daeconverter currently has an issue where it doesn't g
 this which involves copying over the inverse values from the original model. You can use a command in the daeconverter in order to make this process more simple. Take the file you compiled and the original model that has the node 
 setup you want. If it doesn't exist or it causes a crash due to tag versions then use the tag extractor to get the render_model file. Place these files in the root directory of the map editor and go the the launcher and click
 "Open CMD in Toolkit Folder" Then type
+
 daeconverter.exe -replace-node (destination file) (source file)
+
 So for example
+
 daeconverter.exe -replace-node brute.render_model bruteOLD.render_model
+
 brute.render_model being the file we compiled and bruteOLD.render_model being the original file we extracted using the tag extractor. Ensure that you include the file extension. After this is done you can copy your compiled model to
 the tags folder for editing. Go ahead and open it in H2Guerilla. Lets fill in the remaining things that the converter does not take care of.
 
