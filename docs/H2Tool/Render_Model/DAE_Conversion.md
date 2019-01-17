@@ -151,3 +151,11 @@ the tags folder for editing. Go ahead and open it in H2Guerilla. Lets fill in th
 For the first part add whatever name you choose and check the force node maps option.
 
 ![](assets/DAEConversionStep11.png)
+
+Set node map offset to "-1" without the quotations. I'm not sure if this even does anything but all the default render_models have this filled in so take care of it.
+
+![](assets/DAEConversionStep12.png)
+
+Set the geometry classification to something that applies. Make sure it is not worldspace or it will crash or not show up at all. Switching it to rigid or rigid boned is where it ends. If you switch it to skinned then you need
+to provide a value for "Opaque Max Nodes/Vertex" or "Transparent Max Nodes/Vertex". They type depends on how many shaders of transparent or opaque are in the parts. Just make sure the one that applies isn't at zero. You can
+get the value from the original or see what the max number of bones affecting a vertice is.

@@ -10,9 +10,10 @@ authors:    General_101
 [Example files](https://mega.nz/#!BpFzHaQQ!zj1lH0FhUk83_6OarKwuTy5ueijLzD2mtFFM3AnOGAY) for the render model importing.
 
 In order to import a working render model one must first export a valid ASS file. You will want to assign your shaders for the model somewhere in the shader_collection so that they are assigned to the BSP during compile.
-This will help you later. A good method to prevent out of BSP errors is to surround your model in a box and give it a unique shader with the @ flag at the end of the shader name. 
-This will expand the space for the model as collision only meaning no render geometry is added to your render model. Give the rest of the model the ! flag at the end of the material name so that it only generates render geometry 
-and nothing else. This will help with errors related to collisions and such. This won't solve everything due to the methods but this will help with most of your issues. 
+This will help you later. A good method to prevent out of BSP errors is to surround your model in a box and give it a unique shader with the @ shader symbol at the end of the shader name. 
+This will expand the space for the model as collision only meaning no render geometry is added to your render model. Give the rest of the model the ! shader symbol at the end of the material name so that it only generates 
+render geometry  and the ) shader symbol to stop tool from welding vertices that are too close.This will help with errors related to collisions and such.
+This won't solve everything due to the methods but this will help with most of your issues. 
 
 You are now ready to use the render command. Hit the browse button and select the ASS file in your render folder. Select render in the model type and make sure the dropdown is on BSP.
 Once it is compiled you will need to now fix the result as it is not ready to be used. All this method does is transfer geometry data over. The rest must be filled in by you.
@@ -32,7 +33,7 @@ ones that are shown in the image. Not doing this can result in the model not app
 
 ![](assets/BSPConversionStep3.png)
 
-Next you will want to fill in section groups and invalid section pair bits. For invalid section pair bits just hit the add button once and you are done. For section groups just click the add button once and check all the boxes.
+Next you will want to fill in section groups. Just click the add button once and check all the boxes.
 
 ![](assets/BSPConversionStep4.png)
 
@@ -53,6 +54,10 @@ Next you will want to change the geometry classification in section to rigid. Yo
 
 Now you will want to add a region and a permutation. If you want multiple permutations you can change the section index to the represent the permutation you want. The first section you see being index 0 and the second in the list
 being index 1.
+
+![](assets/DAEConversionStep11.png)
+
+Set node map offset to "-1" without the quotations. I'm not sure if this even does anything but all the default render_models have this filled in so take care of it.
 
 ![](assets/BSPConversionStep8.png)
 

@@ -10,7 +10,7 @@ authors:    General_101
 
 H2Tool uses a text file format named JMS or ASS in order to produce the many models used for our levels and objects. A pack containing various scripts for both Blender and 3DS Max can be found in the link below. Also included is a readme that will go over what the file is intended to do.
 
-[Download Halo Export Scripts](https://cdn.discordapp.com/attachments/434382924700319745/513670029221560350/Halo_Export.7z)
+[Download Halo Export Scripts](https://cdn.discordapp.com/attachments/434382924700319745/532379345990451202/Halo_Export.7z)
 
 The H2Codez launcher is a program made by Num005 in order to automatically update the H2Codez DLL and easily add H2Codez features to a user friendly UI. Requires the first released version of the map editor tools in order to patch the exes to automatically load H2Codez.
 
