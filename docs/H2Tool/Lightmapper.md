@@ -1,7 +1,7 @@
 title:      Multi Instance Lightmapper
 desc:       Using multiple instances of the lightmapper to cut down on rasterizing time.
 template:   document
-nav:        H2Tool>Multi Instance Lightmapper
+nav:        H2Tool>Lightmapper
 percent:    100
 date:       2019/2/10
 authors:    General_101
@@ -37,12 +37,14 @@ h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation 
 
 h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation medium 3 3
 
-You should now have 4 tool windows each denoted with an index in the title name of the program. After these are all done it should have generated files labled (scenario name)_(BSP name)_lightmap_radiance_bitmaps_(#).bitmap. Now 
-it's time to merge them all using the following command.
+You should now have 4 tool windows each denoted with an index in the title name of the program. After these are all done it should have generated files labeled
+ 
+(scenario name)_(BSP name)_lightmap_radiance_bitmaps_(#).bitmap.
+
+Now it's time to merge them all using the following command.
 
 h2tool lightmaps-master (scenario path) (BSP name) (lightmapper quality) (instance count)
 
-You want to have the instance count match the number you ran previously otherwise you will get an incomplete lightmap bitmap.
-Here is an example of what it looks like completed.
+You want to have the instance count match the number you ran previously otherwise you will get an incomplete lightmap bitmap. Here is an example of what it looks like completed.
 
 h2tool lightmaps-master scenarios\multi\halo\coagulation\coagulation coagulation medium 3 
