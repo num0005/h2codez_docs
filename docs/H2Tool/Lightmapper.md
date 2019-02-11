@@ -54,7 +54,7 @@ h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation 
 ```
 You should now have 3 tool windows each denoted with an index in the title name of the program. After these are all done it should have generated files labeled
  
- ```
+```
 (scenario name)_(BSP name)_lightmap_radiance_bitmaps_(#).bitmap.
 ```
 
