@@ -30,6 +30,9 @@ If you already know how to use the lightmaps command you can skip this part. Gra
 Both scenario path and BSP name don't include the file extension. 
 {: .warning}
 
+Make sure you don't have duplicate BSPs between your tags folder in program files and your tags folder in documents. Duplicates will cause your lightmaps to be unusable.
+{: .warning}
+
 ## Automatic
 
 Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommanded for anyone that just wants to lightmap faster.
