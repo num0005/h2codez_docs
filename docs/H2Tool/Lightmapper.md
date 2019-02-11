@@ -30,6 +30,24 @@ If you already know how to use the lightmaps command you can skip this part. Gra
 Both scenario path and BSP name don't include the file extension. 
 {: .warning}
 
+## Automatic
+
+Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommanded for anyone that just wants to lightmap faster.
+
+Begin by typing in the following command and set instance count to the number of instances you want it to start
+
+```
+h2tool lightmaps-local-multi-process (scenario path) (BSP name) (lightmapper quality) (instance count)
+```
+Once you run the command you should see it start a few tool instances and tell you it's waiting for them to exit, at this point you just wait.
+
+Instance count can't be less than 2 as that doesn't make sense.
+{: .tip}
+
+Make sure you have enough free memory for all the tool instances you are running before you start
+{: .warning}
+
+
 ## Manual
 
 This is the more complex method but it's the only one that allows you to use all the features bungie could.
@@ -69,19 +87,3 @@ You want to have the instance count match the number you ran previously otherwis
 ```
 h2tool lightmaps-master scenarios\multi\halo\coagulation\coagulation coagulation medium 3 
 ```
-## Automatic
-
-Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommanded for anyone that just wants to lightmap faster.
-
-Begin by typing in the following command and set instance count to the number of instances you want it to start
-
-```
-h2tool lightmaps-local-multi-process (scenario path) (BSP name) (lightmapper quality) (instance count)
-```
-Once you run the command you should see it start a few tool instances and tell you it's waiting for them to exit, at this point you just wait.
-
-Instance count can't be less than 2 as that doesn't make sense.
-{: .tip}
-
-Make sure you have enough free memory for all the tool instances you are running before you start
-{: .warning}
