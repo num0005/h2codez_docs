@@ -55,7 +55,79 @@ Physics don't use shaders for their material names. They instead use material ef
 hard_metal_thick_hum
 base default
 ```
-Now that the material is setup lets get the actual geometry for your physics model in. Grab that JMS that you exported with the shitty exporter. You should see a vertice count along with a ton of vertice translation.
+Now that you have your materials and nodes setup lets decide on what type of mesh we want for our physics file to be.
+## Sphere
+Lets say we want a sphere based collision. Lets fill out the sphere section in our JMS file. In order to figure out what radius our sphere will be you can create a UV sphere in Blender and scale it to what you want to cover the model.
+Be sure that the scale is uniform since spheres only take radius. Now to get the radius of our sphere you will want to take the value of a dimension and divide it by half. This will give you the value for radius.
+```markdown
+;### SPHERES ###
+0
+;   <name of object>
+;   <node index starting from 0>
+;   <material index starting from 0>
+;   <rotation <i,j,k,w>>
+;   <translation <x,y,z>>
+;   <radius>
+
+;SPHERE 0
+phy_test
+0
+0
+0.0000000000	0.0000000000	0.0000000000	1.0000000000
+0.0000000000	0.0000000000	0.0000000000
+10
+```
+An example of what you should end up with.
+
+## Box
+A box is pretty simple. Go to Blender and make a cube shaped mesh. Form it until it covers the model you are attempting to make a physics model for. The scale doesn't have to be uniform for this. Once it is done take the dimensions
+of the model and use the XYZ of the model as your XYZ for the JMS file.
+```markdown
+;### BOXES ###
+1
+;	<name>
+;	<parent>
+;	<material>
+;	<rotation <i,j,k,w>>
+;	<translation <x,y,z>>
+;	<width (x)>
+;	<length (y)>
+;	<height (z)>
+
+;BOX 0
+phy_test
+0
+0
+0.0000000000	0.0000000000	0.0000000000	1.0000000000
+0.0000000000	0.0000000000	0.0000000000
+10
+10
+10
+```
+## Capsules
+Take a cylinder and keep the X and Y uniform. The Z can be changed however you want. Take the Z as height and take either the X or Y halved as your radius.
+```markdown
+;### CAPSULES ###
+1
+;   <name>
+;   <parent>
+;   <material>
+;   <rotation <i,j,k,w>>
+;   <translation <x,y,z>>
+;   <height>
+;   <radius>
+
+;CAPSULE 0
+phy_test
+0
+0
+0.0000000000	0.0000000000	0.0000000000	1.0000000000
+0.0000000000	0.0000000000	0.0000000000
+10
+10
+```
+## Convex
+Use the "shitty" exporter for this part. You should see a vertice count along with a ton of vertice translation.
 ```markdown
 20298
 -25.17850097136	-10.93558594447	1.883197579523
@@ -103,4 +175,3 @@ The material index will depend on what effect you want for that object. Again th
 So while frame is at 0 0 0 our physics object may bee 3 units above frame so you would type 0 0 3 for the physics object for it's placement in relation to frame. 
 I personally change the location of frame to reflect location of the head of the bone the object is tied to then move frame to 0 0 0 with the object attached. You are pretty much done after this. 
 You can use the tag extractor with extract import info to look at some of the physics_model.JMS files to get a good idea of what a JMSv2 file would want.
-

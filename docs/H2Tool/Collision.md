@@ -6,6 +6,9 @@ percent:    100
 date:       2018/12/07
 authors:    General_101
 
+Be warned that when you generate a new collision tag that it will be placed outside of the parent directory. Move it back in afterwards.
+{: .warning}
+
 Collision tags in Halo 2 are created by exporting JMS files in UTF-16 format and making some specific changes to how the material and node names are done. We can then import the JMS file with H2Tool to get our working collision_model tags.
 Let's get started by making the necessary changes to a freshly exported JMS file from either Blender or 3DS Max. Open it in Notepad++ and look to the first few lines that should look something like this
 ```markdown
@@ -69,3 +72,4 @@ This changes the <none> to a permutation and a region in that order. It also add
 (Names of permutations and regions listed here)
 ```
 The final step is to change the encoding. Open up the text file in Notepad++ and change the encoding from whatever it currently is to UCS-2 LE BOM. H2Tool should now accept your JMS files without issues assuming they are valid.
+Place the JMS file inside a folder labeled "collision" and browse the the parent folder that you created the collision folder in using the launcher. Hit compile while having collisions checkmarked.
