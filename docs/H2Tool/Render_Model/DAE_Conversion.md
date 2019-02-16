@@ -127,21 +127,29 @@ C. It's bullshit. I did not forget to change the model classification. I did not
 
 Now that you're here I hope you fully rigged that model and the armature model you'll be needing. This section will go over importing our model and making the adjustments needed to prepare it for ingame usage. 
 First begin by exporting your rigged model and the armature as separate DAE files with the Master Chief skeleton included. Lets head on over to the data directory of our map editor. The way you want to setup your folder structure
-is simple. Begin by creating your parent folder and naming it what you want the name of the generated render_model to be. Inside this folder we will place our armature.dae file here. THIS FILE NEEDS TO BE NAMED AS SUCH OTHERWISE
-THE PROCESS WILL FAIL AND YOU WILL GET EITHER A CRASH OR NO NODES! After that you want to create a new folder inside your parent folder. Name this folder the name of the region and then inside this region folder create another
-folder. Name it what you want the permutation to be named. Inside the permutation folder place the DAE file of our model. You can place multiple models in this folder named L1-L6 to make LOD sections. Once you have this setup
-you can use the daeconverter to compile the model. Begin by opening the launcher and going to the model compiling tab. Hit the browse button and select the folder that contains the armature.dae file. Select render in the model
-type and then change the dropdown from BSP to DAE. Now you can hit the compile button and assuming you did everything correctly then it should compile a working model. The result will be generated in the same folder where the
-armature.dae file is. The daeconverter currently has an issue where it doesn't generate inverse values in the nodes correctly so our rigged chief model may look warped if you were to go ingame. Currently we have a workaround for
+is simple. Begin by creating your parent folder and naming it what you want the name of the generated render_model to be. Inside this folder we will place our armature.dae file here. 
+
+THIS FILE NEEDS TO BE NAMED AS SUCH OTHERWISE THE PROCESS WILL FAIL AND YOU WILL GET EITHER A CRASH OR NO NODES! 
+{: .warning}
+
+After that you want to create a new folder inside your parent folder. Name this folder the name of the region and then inside this region folder create another folder. Name it what you want the permutation to be named. 
+Inside the permutation folder place the DAE file of our model. You can place multiple models in this folder named L1-L6 to make LOD sections. Once you have this setup you can use the daeconverter to compile the model.
+Begin by opening the launcher and going to the model compiling tab. Hit the browse button and select the folder that contains the armature.dae file. Select render in the model type and then change the dropdown from BSP to DAE. 
+Now you can hit the compile button and assuming you did everything correctly then it should compile a working model. The result will be generated in the same folder where the armature.dae file is. 
+The daeconverter currently has an issue where it doesn't generate inverse values in the nodes correctly so our rigged chief model may look warped if you were to go ingame. Currently we have a workaround for
 this which involves copying over the inverse values from the original model. You can use a command in the daeconverter in order to make this process more simple. Take the file you compiled and the original model that has the node 
 setup you want. If it doesn't exist or it causes a crash due to tag versions then use the tag extractor to get the render_model file. Place these files in the root directory of the map editor and go the the launcher and click
 "Open CMD in Toolkit Folder" Then type
 
+```
 daeconverter.exe -replace-node (destination file) (source file)
+```
 
 So for example
 
+```
 daeconverter.exe -replace-node brute.render_model bruteOLD.render_model
+```
 
 brute.render_model being the file we compiled and bruteOLD.render_model being the original file we extracted using the tag extractor. Ensure that you include the file extension. After this is done you can copy your compiled model to
 the tags folder for editing. Go ahead and open it in H2Guerilla. Lets fill in the remaining things that the converter does not take care of.

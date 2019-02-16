@@ -12,11 +12,15 @@ By default H2tool does not allow any other scenario type than multiplayer to be 
 ## AI Script Functions
 Scripts with AI commands will now function as intended as long as the user follows the proper instructions.
 
+```
 (ai_place wave1)
+```
 
 Using names here for ai_place will work as intended however if the user wanted to reference starting location then they would have to use something like this.
 
+```
 (ai_place wave1/0)
+```
 
 With wave1 being the name of the squad and 0 being the tag block index of starting location. This may change in the future so that most of the ai commands if not all use names instead of index.
 List of which work with which is here.

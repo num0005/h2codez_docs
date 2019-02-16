@@ -29,7 +29,9 @@ pathfinding-copy "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\
  
 The second command is for entirely new meshes. The command goes by
  
+```
 pathfinding-from-coll (sbsp)
+```
  
 This is a WIP solution intended for meshes that have a custom collision mesh such as your custom level. Simply type out the command and type out the full path to the file in quotes. After the command is entered it will generate
 a new scenario_structure_bsp in
