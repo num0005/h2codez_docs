@@ -16,9 +16,14 @@ pathfinding-copy (source) (destination)
 This will copy all the pathfinding data block and all of the child blocks from a donor scenario_structure_bsp tag to your new scenario_structure_bsp. Due to how pathfinding works expect not working or wonky results from using
 this unless your collision mesh is 1:1 with the source material. Type out the full path in quotes to the file without the extension. After using this command it will generate a scenario_structure_bsp tag with your copied pathfinding data in
  
+```
 C:\Users\(USERNAME)\Documents\Halo 2\tags
+```
  
-Example Usage: pathfinding-copy "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0" "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\test"
+Example Usage:
+```
+pathfinding-copy "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0" "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\test"
+```
  
 The second command is for entirely new meshes. The command goes by
  
@@ -27,9 +32,14 @@ pathfinding-from-coll (sbsp)
 This is a WIP solution intended for meshes that have a custom collision mesh such as your custom level. Simply type out the command and type out the full path to the file in quotes. After the command is entered it will generate
 a new scenario_structure_bsp in
  
+```
 C:\Users\(USERNAME)\Documents\Halo 2\tags
+```
  
-Example Usage: pathfinding-from-coll "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0"
+Example Usage:
+```
+pathfinding-from-coll "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0"
+```
  
 A file named (scenario)_import_setting.txt can be created in the directory that contains the .scenario file for the level that you wish to tweak the import settings for. (scenario) should be replaced for the name of the .scenario
 file you are editing. So lockout_import_setting.txt for example. These are the following things that can be written into this file.

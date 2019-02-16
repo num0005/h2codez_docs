@@ -21,23 +21,15 @@ Using names here for ai_place will work as intended however if the user wanted t
 With wave1 being the name of the squad and 0 being the tag block index of starting location. This may change in the future so that most of the ai commands if not all use names instead of index.
 List of which work with which is here.
 
-AI behavior
-
-Conversation
-
-AI orders
-
-AI (starting locations referenced by block index)
-
-Style (internal ID only)
-
-Navpoint (internal ID only)
-
-AI command list (internal ID only)
-
-HUD message (internal ID only)
-
-Point reference (internal ID only)
+- AI behavior
+- Conversation
+- AI orders
+- AI (starting locations referenced by block index)
+- Style (internal ID only)
+- Navpoint (internal ID only)
+- AI command list (internal ID only)
+- HUD message (internal ID only)
+- Point reference (internal ID only)
 
 ## Increase BSP max depth
 A passive change to H2tool's level compiler that allows for more detailed geometry to be imported. Increased to a maximum value of 512.

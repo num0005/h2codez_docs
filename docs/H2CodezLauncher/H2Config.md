@@ -6,7 +6,7 @@ percent:    100
 date:       2018/12/07
 authors:    General_101
 
-A new feature for H2Codez is upon the starting and closing of H2Sapien a file named "H2Codez.conf" will be created in "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor".
+A new feature for H2Codez is upon the starting and closing of H2EK a file named "H2Codez.conf" will be created in the root directory of the map editor.
 There will be a few options inside that we will go over here. Make sure to close everything related to the tool kit before editing.
  
 discord_enabled = X
@@ -68,6 +68,8 @@ A debug console for the toolkit in command prompt. Don't expect much. Enable or 
 experimental_tag_sync = X
 
 THIS MAY RESULT IN CRASHES IF YOU EDIT CERTAIN THINGS SUCH AS CHANGING THE NODE SETUP OF A MODEL.
+{: .warning}
+
 A feature brought up in presentations of Halo 2 Xbox but left disabled in the shipped build of H2EK. As you may speculate from the name, this feature will update almost any edit you make to your tags in H2Guerilla to show in H2Sapien.
 With this you can do things like shader editing in real time or edit effects. Enable or disable with a true or false.
  
