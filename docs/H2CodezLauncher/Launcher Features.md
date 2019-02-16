@@ -9,6 +9,7 @@ authors:    General_101
 ## Shared Removal
 Do not use this at the moment unless you understand what you are doing. Using this option will leave you with an unknown crash at time of writing.
 {: .warning}
+
 When a map is built H2tool checks the assets of the map against a tag list for shared and then does not package the assets that exist while leaving a reference to shared in the scenario file. 
 H2Codez has an option to ignore this and instead package all dependencies on your map into your map file. This can be used to overwrite default files such as a custom globals.globals which allows for custom bipeds and weapons. 
 
@@ -19,7 +20,7 @@ Currently the only known bug is memory logging doesn't work properly but this sh
 
 ## Reset H2Sapien Window Layout
 An easy way to restore H2Sapien's window settings to default when the situation calls for something a bit more serious. This button found in the settings menu works by by deleting all the stored window size information found in "HKEY_CURRENT_USER/Software/bungie/sapien".
-They should then be restored as if you had just installed Sapien.
+They should then be restored as if you had just installed H2Sapien.
 
 ## Open CMD In Toolkit Folder
 Exactly as it says. Open a command prompt window to have access to H2Tool commands with some that may not be featured in the launcher for being misc or not working. Type H2Tool to begin typing commands the old fashioned way.
@@ -36,8 +37,8 @@ Be warned that the outputted file will not be placed in its proper place and wil
 If the user has his selection on physics then it will search for a physics folder. If we have our path set to objects\multi\test then it will compile a JMSv2 file from objects\multi\test\physics. 
 This one does get placed in its proper folder so you're done here.
  
-If the user has his selection on render then the next action will depend upon the compile type chosen by the dropdown in the bottom left. If the user has his selection on render and BSP choosen in the bottom left drop down then it will search for a render folder.
-If we have our path set to objects\multi\test then it will compile a ASS/JMS/JMSv2 file from objects\multi\test\render. This one does get placed in its proper folder. If the user has his selection on render and DAE choosen in the bottom left drop down then it we can ignore the previous template we setup as the file can be compiled from anywhere.
+If the user has his selection on render then the next action will depend upon the compile type chosen by the dropdown in the bottom left. If the user has his selection on render and BSP chosen in the bottom left drop down then it will search for a render folder.
+If we have our path set to objects\multi\test then it will compile a ASS/JMS/JMSv2 file from objects\multi\test\render. This one does get placed in its proper folder. If the user has his selection on render and DAE chosen in the bottom left drop down then it we can ignore the previous template we setup as the file can be compiled from anywhere.
  
 If the user has his selection on all or objects it will run through all of the above and create a model tag and link the results of the previous instructions if any. An object tag will also be created that links the model tag.
 You can use the object type drop down to select an object type.

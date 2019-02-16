@@ -10,7 +10,7 @@ authors:    General_101
 Lightmapping in Halo 2 by default is a bit of a pain. Some maps you make could take days to finish on Super. This make expansive maps with many different light sources be almost impossible to test quickly without doing tricks like
 cutting out the BSP you are testing or using lower quality lightmaps. At the time of current writing the lightmapper farm technique used during the development of Halo 2 has been brought back to a usable state. Here is how to use it.
 
-Limit the max number of lightmapping instances on one PC to the number of threads it supports for best preformace. Leave one thread free if you want to use your PC for anything else during lightmapping.
+Limit the max number of lightmapping instances on one PC to the number of threads it supports for best performance. Leave one thread free if you want to use your PC for anything else during lightmapping.
 {: .tip}
 
 ## Getting started
@@ -35,7 +35,7 @@ Make sure you don't have duplicate BSPs between your tags folder in program file
 
 ## Automatic
 
-Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommanded for anyone that just wants to lightmap faster.
+Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommended for anyone that just wants to lightmap faster.
 
 Begin by typing in the following command and set instance count to the number of instances you want it to start
 
@@ -53,7 +53,7 @@ Make sure you have enough free memory for all the tool instances you are running
 
 ## Manual
 
-This is the more complex method but it's the only one that allows you to use all the features bungie could.
+This is the more complex method but it's the only one that allows you to use all the features Bungie could.
 
 Begin by typing in the following command
 
@@ -64,7 +64,7 @@ h2tool lightmaps-slave (scenario path) (BSP name) (lightmapper quality) (instanc
 
 The instance count is how many instances of tool you want splitting the work starting at 0. Choose a number.
 
-Now here is the most important part. The instance index of the command. If you typed an instance count of 3 then you want to type the commmand 3 times with an instance index for each value. Here is what this would look like.
+Now here is the most important part. The instance index of the command. If you typed an instance count of 3 then you want to type the command 3 times with an instance index for each value. Here is what this would look like.
 
 ```
 h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation medium 3 0

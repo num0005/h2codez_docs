@@ -1,4 +1,4 @@
-title:      H2codez Settings
+title:      H2Codez Settings
 desc:       H2Codes config description
 template:   document
 nav:        H2Codez Launcher>Config
@@ -43,7 +43,7 @@ Who's that Pokemon? No seriously what the fuck does this do? Enable or disable w
  
 console_history_size = X
 
-Will increase the ammount of inputted commands that can be reused from the command history by pressing the UP ARROW.
+Will increase the amount of inputted commands that can be reused from the command history by pressing the UP ARROW.
  
 decoration_force_update = X
 
@@ -59,7 +59,7 @@ prints the results of the H2Sapien console to debug_console if enabled. Enable o
  
 dump_tags_packaging = X
 
-If true this will dump the proccessed scenario tag before packing it into the .map file. Was used for testing and comparisons between extracted and unpackaged scenario tags. Enable with a true or false.
+If true this will dump the processed scenario tag before packing it into the .map file. Was used for testing and comparisons between extracted and unpackaged scenario tags. Enable with a true or false.
  
 enable_debug_console = X
 
@@ -68,7 +68,7 @@ A debug console for the toolkit in command prompt. Don't expect much. Enable or 
 experimental_tag_sync = X
 
 THIS MAY RESULT IN CRASHES IF YOU EDIT CERTAIN THINGS SUCH AS CHANGING THE NODE SETUP OF A MODEL.
-A feature brought up in presentations of Halo 2 Xbox but left disabled in the shiped build of H2EK. As you may speculate from the name, this feature will update almost any edit you make to your tags in H2Guerilla to show in H2Sapien.
+A feature brought up in presentations of Halo 2 Xbox but left disabled in the shipped build of H2EK. As you may speculate from the name, this feature will update almost any edit you make to your tags in H2Guerilla to show in H2Sapien.
 With this you can do things like shader editing in real time or edit effects. Enable or disable with a true or false.
  
 patches_enabled = X

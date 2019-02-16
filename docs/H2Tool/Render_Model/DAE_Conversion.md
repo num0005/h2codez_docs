@@ -100,7 +100,7 @@ empty groups as shown in the provided image. This will fill out the vertex group
 Now select the model and go to the vertex groups tab. See that list from pelvis to r_thumb2? That should be a full list of all the bones we have in our armature and the way we will order our nodes. In Halo 2, two things matter 
 to get working animations on our object. Node order and parent/child/sibling nodes. Node order is what order the nodes are organized in the node tag block. So pelvis is 0 and l_thigh is 1 which means pelvis should be the first
  node in our vertex group and l_thigh should be the second. Parent/child/sibling nodes references to the drop down menus under the node name that can be changed to reference other nodes in the
-list as a parent/child/sibling node. If you match the node order you should not have to worry about this. Now open the masterchief.render_model in Guerilla and examine the node order found there. Make sure the order of the 
+list as a parent/child/sibling node. If you match the node order you should not have to worry about this. Now open the masterchief.render_model in H2Guerilla and examine the node order found there. Make sure the order of the 
 nodes matches the vertex group order. After this is done we can begin our rig process. It is at this moment that you can also hide the armature by clicking the eye icon in the object list or hitting the H key for easy viewing of the model.
 
 ![](assets/DAEConversionStep7.png)
@@ -119,7 +119,7 @@ selected, select pelvis. Ensure that the weight amount is set to 1 in the top le
 You can enter edit mode and use vertex selection to see the weight applied by different bones. As a quick side note, the max amount of bones that can affect a vertex in Halo 2 is 4. Please ensure that your bone limit is at least 
 4 in Blender though by default it should start off as 2 at the most. Continue painting the rest of the areas and linking them to the proper bone using what I have described here. If you are not sure what a particular area should 
 be weighted with then you may download the rigend file provided in the links section to help guide you along. After your model is done you will now want to ensure the model origin is in its proper place. Take your 3D cursor and 
-make sure it's at 0 0 0 for the xyz then hit SHIFT+CTRL+ALT+C in object mode. Select the option to move the model origin to your 3D cursor. Lets take care of the last part and prepare a file called armature.DAE. I know it sounds 
+make sure it's at 0 0 0 for the XYX then hit SHIFT+CTRL+ALT+C in object mode. Select the option to move the model origin to your 3D cursor. Lets take care of the last part and prepare a file called armature.DAE. I know it sounds 
 weird but make a new scene and add a UV sphere. Repeat the steps you had before from unwrapping it to assigning it the proper vertex groups. Once this is all done take your weight tool and randomly streak it across the object. 
 Ensure every bone gets some action here and make sure to not cover the same area too many times. This can lead to you getting errors. Doing this is required so that the model can have it's nodes added properly.
 
