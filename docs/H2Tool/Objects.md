@@ -12,7 +12,7 @@ Now that you have all of your JMS/ASS files ready you will want to setup your fo
 Words in quotations are the name of the folder.
  
 ![](assets/FolderSetup.png)
-		
+        
 You can now use the all option in the model compile tab. Just select the object type and browse and select the models root folder. It will then spit out the compiled tags as it was in data but in tags in terms of folder location.
 Keep in mind that the collision command is a bit strange. While all your other tags will be inside the directory where they were compiled the collision tag will be placed outside the root folder.
 Just move it back inside afterwards and it will be fine.

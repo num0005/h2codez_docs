@@ -18,8 +18,8 @@ Let's get started by making the necessary changes to a freshly exported JMS file
 frame
 -1
 -1
-0.000000	0.000000	0.000000	1.000000
-0.000000	0.000000	0.000000
+0.000000    0.000000    0.000000    1.000000
+0.000000    0.000000    0.000000
 ```
 Add a "b_" before the name of the node in order to avoid an error related to whitespace.
 ```markdown
@@ -29,8 +29,8 @@ Add a "b_" before the name of the node in order to avoid an error related to whi
 b_frame
 -1
 -1
-0.000000	0.000000	0.000000	1.000000
-0.000000	0.000000	0.000000
+0.000000    0.000000    0.000000    1.000000
+0.000000    0.000000    0.000000
 ```
 Lets break down this section so that everything is clear.
 ```markdown
@@ -40,8 +40,8 @@ Lets break down this section so that everything is clear.
 (Frame Name)
 (Child Frame)
 (Sibling Frame)
-(I Rotation)	(J Rotation)	(K Rotation)	(W Rotation)
-(X Translation)	(Y Translation)	(Z Translation)
+(I Rotation)    (J Rotation)    (K Rotation)    (W Rotation)
+(X Translation) (Y Translation) (Z Translation)
 ```
 Next we will solve an error related to the entire model being imported as one region and a material flag not making sense. You can fix this by changing <none> material from this....
 ```markdown
