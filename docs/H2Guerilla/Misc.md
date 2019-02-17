@@ -19,7 +19,6 @@ H2Codez allows us to open and see all the tags Halo 2 accepts.
  
 ## Xbox Audio Codec
 
-
 [Download Xbox Audio Codec](https://mega.nz/#!kl8HFCYQ!8SJbn89GCCHZcVqMaT4GQRbUW7t2hnswHO7d1xf1E_E)
 
 Placing this file in the bin folder allows H2Guerilla you to preview sounds from the sound tag.
