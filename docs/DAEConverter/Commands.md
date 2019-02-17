@@ -7,12 +7,15 @@ date:       2018/12/07
 authors:    General_101
 
 -compile (path)
+
     description: This command is used to compile your DAE files into render_model tags. Point it to a directory containing a proper folder structure.
  
 -decompile (path)
+
     description: An expiremantal command used to dump meshes from render_model files into loadable OBJ files. Not guarunteed to work with all types of render_model tags. Especially different revisions of the tag. Point the path at a render_model file including the file extension.
  
 -replace-node (path) (path)
+
     description: A command to workaround some of the issues the "-compile" command has with generated proper node inverse values. Proper usage is done by typing out the command. The first path is the render_model tag you want the values copied to and the second path is the render_model tags you want the values copied from.
 
 -replace-marker (path) (path)

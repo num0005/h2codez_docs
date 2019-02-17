@@ -2,7 +2,7 @@ title:      H2Codez Settings
 desc:       H2Codes config description
 template:   document
 nav:        H2Codez Launcher>Config
-percent:    70
+percent:    100
 date:       2018/12/07
 authors:    General_101
 
