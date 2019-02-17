@@ -118,4 +118,4 @@ Add all sounds to the cahce file instead of just certain sounds of a certain voc
 Value needs to be multiples of 512 in order to not be blacklisted.
 {: .warning}
 
-Changes the layout of the tag data. Really more of a proof of concept than anything else. Value starts from 0 and goes up in multiples of 512 if you want to avoid issues.
+Changes the layout of the data. Really more of a proof of concept than anything else. Value starts from 0 and goes up in multiples of 512 if you want to avoid issues.
