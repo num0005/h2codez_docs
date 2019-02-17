@@ -96,3 +96,22 @@ Will make H2Sapien act as if it is running an actual instance of the game such a
 #####use_loading_animation = X
 
 You ask me why and I say why not. Enable with a true or false in the H2Codez.conf to see or not see the default H2 loading animation while loading maps in H2Sapien.
+
+#####nvidia_fix = X
+Changes the process name of H2Sapien to solve a graphical issue on some Nvidia cards. Enable or disable with a true or false.
+
+#####enable_cache_writer_patches = X
+???
+
+#####disable_debug_tag_names = X
+Don't add tag names to the cache file. Enable or disable with a true or false.
+
+#####disable_sound_references_postprocessing = X
+
+This may cause your map to get blacklisted from the custom maps list due to a large amount of tags. Do not use this unless Halo2.exe has been patched for this.
+{: .warning}
+
+Add all sounds to the cahce file instead of just certain sounds of a certain vocalization type for MP cache files.
+
+#####cache_file_alignment = (value)
+???
