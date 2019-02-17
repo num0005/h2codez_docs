@@ -100,7 +100,9 @@ The lightmapping process on all instances/slaves is largely the same up to the r
 ### Usage
 
 Largely the same as manual but you only run two commands. See that section for more detail.
+
 1. `h2tool lightmaps-slave-fork (scenario path) (BSP name) (lightmapper quality) (instance count)`
+
 2. `h2tool lightmaps-master (scenario path) (BSP name) (lightmapper quality) (instance count)`
 
 This is an unstable method and may crash without warning or worse. Data corruption or a system crash are quite unlikely but can't be ruled out.

@@ -101,7 +101,7 @@ You ask me why and I say why not. Enable with a true or false in the H2Codez.con
 Changes the process name of H2Sapien to solve a graphical issue on some Nvidia cards. Enable or disable with a true or false.
 
 #####enable_cache_writer_patches = X
-???
+Enables patches meant to edit how H2tool writes out the cache file data. Pretty much only related to cache_file_alignment at the moment. Enable or disable with a true or false.
 
 #####disable_debug_tag_names = X
 Don't add tag names to the cache file. Enable or disable with a true or false.
@@ -114,4 +114,8 @@ This may cause your map to get blacklisted from the custom maps list due to a la
 Add all sounds to the cahce file instead of just certain sounds of a certain vocalization type for MP cache files.
 
 #####cache_file_alignment = (value)
-???
+
+Value needs to be multiples of 512 in order to not be blacklisted.
+{: .warning}
+
+Changes the layout of the tag data. Really more of a proof of concept than anything else. Value starts from 0 and goes up in multiples of 512 if you want to avoid issues.
