@@ -19,7 +19,7 @@ install:
 
     C:\Python36\python -m ensurepip --default-pip
 
-    C:\Python36\python -m pip install docnado
+    C:\Python36\python -m pip install docnado==1.0.4
 build_script:
 - cmd: >-
     set PATH=%PATH%;C:\Python36\Scripts;C:\Python36\
