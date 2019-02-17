@@ -90,3 +90,18 @@ You want to have the instance count match the number you ran previously otherwis
 ```
 h2tool lightmaps-master scenarios\multi\halo\coagulation\coagulation coagulation medium 3 
 ```
+
+## Fork/clone (experimental)
+
+#### Technical background
+
+The lightmapping process on all instances/slaves is largely the same up to the rasterizing stage at which different instances generate radiance bitmaps for different parts of the BSP. This results in a lot of redundant processing if multiple instances are run on one system. This is an attempt to work around that by creating "clones" or "forks" of an initial lightmapping process when it reaches the rasterizing stage. It's quite unstable as cloning a process isn't officially supported on windows.
+
+### Usage
+
+Largely the same as manual but you only run two commands. See that section for more detail.
+1. `h2tool lightmaps-slave-fork (scenario path) (BSP name) (lightmapper quality) (instance count)`
+2. `h2tool lightmaps-master (scenario path) (BSP name) (lightmapper quality) (instance count)`
+
+This is an unstable method and may crash without warning or worse. Data corruption or a system crash are quite unlikely but can't be ruled out.
+{: .danger}
