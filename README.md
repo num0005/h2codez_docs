@@ -5,5 +5,7 @@ Documentation for H2Codez. Uses docando and appveyor to automatically deploy cha
 
 # Credits
 Kornmann00 for his original research into the toolset
+
 Himanshu01 for the creation of H2Codez
+
 Num005(Ale) for contributing to H2Codez and the creation of the H2Codez launcher

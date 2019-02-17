@@ -111,7 +111,7 @@ Don't add tag names to the cache file. Enable or disable with a true or false.
 This may cause your map to get blacklisted from the custom maps list due to a large amount of tags. Do not use this unless Halo2.exe has been patched for this.
 {: .warning}
 
-Add all sounds to the cahce file instead of just certain sounds of a certain vocalization type for MP cache files.
+Add all sounds to the cache file instead of just certain sounds of a certain vocalization type for MP cache files.
 
 #####cache_file_alignment = (value)
 

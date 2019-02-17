@@ -12,7 +12,7 @@ authors:    General_101
  
 -decompile (path)
 
-    description: An expiremantal command used to dump meshes from render_model files into loadable OBJ files. Not guarunteed to work with all types of render_model tags. Especially different revisions of the tag. Point the path at a render_model file including the file extension.
+    description: An experimental command used to dump meshes from render_model files into loadable OBJ files. Not guaranteed to work with all types of render_model tags. Especially different revisions of the tag. Point the path at a render_model file including the file extension.
  
 -replace-node (path) (path)
 
