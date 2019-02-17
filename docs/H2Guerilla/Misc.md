@@ -31,7 +31,9 @@ It will give you the needed scripting documentation for Halo 2. It has also been
  
 ## File Selection Menu
 The menu has been changed so that Windows versions below seven can get easy access to the favorites tab and such from the file selection menu in H2Guerilla and H2Sapien.
+
 ![](assets/FileSelection.png)
+
 Image to see difference clearly.
  
 ## Multi Tag

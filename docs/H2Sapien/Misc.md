@@ -31,7 +31,7 @@ set_temp render_pathfinding_debug (boolean)
 Clicking this button in the scenario tab will make H2Sapien run your scripts so that you may see how they work. Some script functions will not work in H2Sapien and must be tested ingame like ai_place.
  
 ## Decorations
-Changes to H2Sapien so that the render_decorations command is a bit more straight forward. It should now actually do its job and actually enable decorations for the most part. Some won't render due to I assume LOD stuff but their normals should be shown unlike before at the very least after using render_decorators 1. See #32 to enable an option that should allow you to see all valid decorators in H2Sapien and more.
+Changes to H2Sapien so that the render_decorations command is a bit more straight forward. It should now actually do its job and actually enable decorations for the most part. Some won't render due to I assume LOD stuff but their normals should be shown unlike before at the very least after using render_decorators 1.
  
 ## Baggage.txt
 Baggage.txt is a txt file that was output upon hitting CTRL+Shift+B in H1Sapien. In H2Sapien this causes the program to crash.
