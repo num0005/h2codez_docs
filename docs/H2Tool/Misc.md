@@ -33,7 +33,7 @@ List of which work with which is here.
 - Navpoint (internal ID only)
 - AI command list (internal ID only)
 - HUD message (internal ID only)
-- Point reference (internal ID only)
+- Point reference
 
 ## Increase BSP max depth
 A passive change to H2tool's level compiler that allows for more detailed geometry to be imported. Increased to a maximum value of 512.
