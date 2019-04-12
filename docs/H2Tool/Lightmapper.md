@@ -33,6 +33,9 @@ Both scenario path and BSP name don't include the file extension.
 Make sure you don't have duplicate BSPs between your tags folder in program files and your tags folder in documents. Duplicates will cause your lightmaps to be unusable.
 {: .warning}
 
+There is a 32 MB limit for the lightmap bitmap in H2V. If your generated bitmap is larger than this then it will be corrupted and won't work. 
+{: .warning}
+
 ## Automatic
 
 Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommended for anyone that just wants to lightmap faster.
