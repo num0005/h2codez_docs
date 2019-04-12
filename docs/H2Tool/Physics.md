@@ -173,5 +173,6 @@ Create a convex shape entry in the list as ;CONVEX SHAPE # and give it a name. P
 ```
 The material index will depend on what effect you want for that object. Again this is based on the order that it is listed in for the JMSv2 File. The next part is a bit annoying. Basically what this part is is the centroid of the object that you are exporting. 
 So while frame is at 0 0 0 our physics object may bee 3 units above frame so you would type 0 0 3 for the physics object for it's placement in relation to frame. 
-I personally change the location of frame to reflect location of the head of the bone the object is tied to then move frame to 0 0 0 with the object attached. You are pretty much done after this. 
+I personally change the location of frame to reflect location of the head of the bone the object is tied to then move frame to 0 0 0 with the object attached.
+The final thing to do after this is formatting. Make sure that the files encoding is UCS-2 LE BOM. Ensure that all spaces are converted to tabs as spaces will cause H2Tool to freak out. The file should be ready after this.
 You can use the tag extractor with extract import info to look at some of the physics_model.JMS files to get a good idea of what a JMSv2 file would want.
