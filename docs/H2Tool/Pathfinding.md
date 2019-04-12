@@ -63,3 +63,6 @@ Due to the nature of how new and experimental this is, this can be used when man
 
 The next one is similar in setup but instead removes sectors that the pathfinding method did not remove that it perhaps should have.
 What the surface index of something is can be found by using the collision_debug command in the H2Sapien console.
+
+For the curious here is my understanding for the future.
+[My Pathfinding Research](https://pastebin.com/XxZ9Mip5)

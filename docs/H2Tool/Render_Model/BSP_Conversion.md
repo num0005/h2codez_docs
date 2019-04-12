@@ -69,3 +69,8 @@ Now you may have read this and now be wondering how multiple sections for permut
 
 Simply place multiple ASS files in the same directory and they will be added as new sections. The order they are in alphabetically will determine the section order. From here simply reference the proper index in the permutation 
 section.
+
+Multiple LODs is also a very similar concept. Say you have 6 different models, each of them for an LOD section. You make six different ASS files and then each of them will be added as seperate sections much like with the permutation instructions.
+This time however you take each section and give a unique index to each section under permutation like so.
+
+![](assets/BSPConversionStep10.png)
