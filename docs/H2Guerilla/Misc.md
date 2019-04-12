@@ -30,7 +30,7 @@ While the command still exists, it has been added as an option you can click in 
 It will give you the needed scripting documentation for Halo 2. It has also been modified to output globals script functions.
  
 ## File Selection Menu
-The menu has been changed so that Windows versions below seven can get easy access to the favorites tab and such from the file selection menu in H2Guerilla and H2Sapien.
+The menu has been changed so that Windows versions above Windows 7 can get easy access to the favorites tab and such from the file selection menu in H2Guerilla and H2Sapien.
 
 ![](assets/FileSelection.png)
 
