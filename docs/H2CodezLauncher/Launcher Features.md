@@ -13,6 +13,13 @@ Do not use this at the moment unless you understand what you are doing. Using th
 When a map is built H2tool checks the assets of the map against a tag list for shared and then does not package the assets that exist while leaving a reference to shared in the scenario file. 
 H2Codez has an option to ignore this and instead package all dependencies on your map into your map file. This can be used to overwrite default files such as a custom globals.globals which allows for custom bipeds and weapons. 
 
+As a workaround until this is solved you can use the following link in order to have some more control over your map than you would previously.
+
+[Edited Shared and Tags](https://mega.nz/#!Q0Mk2YzL!CLVagIOnZhS6zmFqn-HME5k6I_qcCsuRkh2s8QiGENE)
+
+Download the linked zip and place the contents of this zip in your Halo 2 map editor folder. Backup anything it asks you to overwrite. This should allow you to have things like custom globals but keep in mind that this will blacklist your map unless
+Halo 2 was patched to prevent that. It will also break map names, descriptions, and team options in the pregame lobby. People can use this map like any other custom map. They do not need the edited shared in this zip.
+
 ## Large Address Aware
 This is an checkbox you can find in the settings menu of the H2 Toolkit Launcher. When checked the "Run H2Sapien" button and any H2Tool related buttons will run a version of the H2Tool/H2Sapien exes with the Large Address Aware flag enabled.
 This will allow it to use up to four GBs of memory instead of the standard two. This can help with some crashes during H2Tool or H2Sapien running out of memory. Enable them at your own risk. 
