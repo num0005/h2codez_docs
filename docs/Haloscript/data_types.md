@@ -76,9 +76,8 @@ Enums short for enumerated are used for named values.
 
 ### Objects / Object Names ###
 
-Objects and Object names are the same with two minor differences, objects can be set to `NONE` meaning no object and object names can't. So you can use `sound_impulse_start` without an object but not `object_create`
+Objects and Object names are the same with one minor difference, objects can be set to `NONE` meaning no object and object names can't. So you can use `sound_impulse_start` without an object but not `object_create`
 
-The other minor difference is how casting works on them, once again see [Type Casting](type_casting.md) for more.
 
 The full list of object/object name types is:
 
