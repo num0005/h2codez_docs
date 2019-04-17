@@ -2,7 +2,7 @@ title:      HaloScript Data Types
 desc:       Description of the different data types used in HaloScript
 template:   document
 nav:        HaloScript>Data Types
-percent:    60
+percent:    70
 date:       2019/04/17
 authors:    Num0005
 
@@ -88,3 +88,9 @@ The full list of object/object name types is:
 * weapon
 * device
 * scenery
+
+### Miscellaneous ###
+
+The remaining types that don't easily fit into any of the above.
+
+![](assets/misc_types.csv){: .full-width}
