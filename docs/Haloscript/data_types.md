@@ -13,7 +13,7 @@ These can be broken into 3 main groups: internal, basic and complex.
 ### Internal ###
 
 There are 4 types that are mostly used internally by the system: `unparsed`, `special form`, `function name` and `passthrough`.
-Out of these the only one of note for us is `passthrough` as it can be "cast" or converted to any other type. See [Type Casting] for more.
+Out of these the only one of note for us is `passthrough` as it can be "cast" or converted to any other type. See [Type Casting](type_casting.md) for more.
 
 ## Basic ##
 
@@ -76,9 +76,9 @@ Enums short for enumerated are used for named values.
 
 ### Objects / Object Names ###
 
-Objects and Object names with one minor different, objects can be set to `NONE` meaning no object and object names can't. So you can use `sound_impulse_start` without an object but not `object_create`
+Objects and Object names are the same with two minor differences, objects can be set to `NONE` meaning no object and object names can't. So you can use `sound_impulse_start` without an object but not `object_create`
 
-Objects have a complex set of rules relating to casting, once again see [Type Casting] for more.
+The other minor difference is how casting works on them, once again see [Type Casting](type_casting.md) for more.
 
 The full list of object/object name types is:
 
