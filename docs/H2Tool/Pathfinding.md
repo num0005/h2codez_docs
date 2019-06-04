@@ -9,26 +9,8 @@ authors:    General_101
 THIS PART IS EXPIREMENTAL. DO NOT EXPECT ANYTHING TOO ADVANCED OR FOR STUFF TO WORK PROPERLY. LOTS OF RESEARCH IN THIS AREA IS STILL NEEDED.
 {: .warning}
 
-That being said two commands have been added that may aid you in research or an attempt to make AI maps. The first is a command that goes by
-<!—
-```
-pathfinding-copy (source) (destination)
-```
- 
-This will copy all the pathfinding data block and all of the child blocks from a donor scenario_structure_bsp tag to your new scenario_structure_bsp. Due to how pathfinding works expect not working or wonky results from using
-this unless your collision mesh is 1:1 with the source material. Type out the full path in quotes to the file without the extension. After using this command it will generate a scenario_structure_bsp tag with your copied pathfinding data in
- 
-```
-C:\Users\(USERNAME)\Documents\Halo 2\tags
-```
- 
-Example Usage:
-```
-pathfinding-copy "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0" "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\test"
-```
-—>
-The second command is for entirely new meshes. The command goes by
- 
+That being said a command has been added that may aid you in research or an attempt to make AI maps. The command goes by
+
 ```
 pathfinding-from-coll (sbsp)
 ```
