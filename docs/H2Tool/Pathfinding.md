@@ -10,7 +10,7 @@ THIS PART IS EXPIREMENTAL. DO NOT EXPECT ANYTHING TOO ADVANCED OR FOR STUFF TO W
 {: .warning}
 
 That being said two commands have been added that may aid you in research or an attempt to make AI maps. The first is a command that goes by
-
+<!—
 ```
 pathfinding-copy (source) (destination)
 ```
@@ -26,7 +26,7 @@ Example Usage:
 ```
 pathfinding-copy "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\01_bsp_0" "C:\Program Files (x86)\Microsoft Games\Halo 2 Map Editor\tags\test"
 ```
- 
+—>
 The second command is for entirely new meshes. The command goes by
  
 ```
