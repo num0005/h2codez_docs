@@ -34,6 +34,28 @@ List of which work with which is here.
 - AI command list (internal ID only)
 - HUD message (internal ID only)
 - Point reference
+- cs_movement_mode
+- ai_combat_status
+
+Restored Globals List
+cs movement_mode                   ai_combat_status
+
+815_global 2 ai_movement_combat    807_global 4 ai_combat_status_uninspected
+813_global 0 ai_movement_patrol    809_global 0 ai_combat_status_certain
+816_global 3 ai_movement_flee      804_global 1 ai_combat_status_idle
+                                   806_global 3 ai_combat_status_active
+                                   811_global 8 ai_combat_status_clear_los
 
 ## Increase BSP max depth
 A passive change to H2tool's level compiler that allows for more detailed geometry to be imported. Increased to a maximum value of 512.
+
+## Dump as XML command
+The command "dump-as-xml (tag_path)" was added to H2Tool to allow you to dump the values in a tag as an XML document. This can help you compare two tags quickly and efficently using something like the compare feature in Notepad++.
+
+## Fix extracted bitmaps command
+The command "fix-extracted-bitmaps" will load all the bitmaps in your tags folder and repair them if they were extracted and are missing important tag data.
+
+## Fix extracted lightmaps command
+THIS PART IS EXPIREMENTAL. YOU MAY STILL EXPIRENCE CRASHES WHILE ATTEMPING TO RELIGHT THE MAP EVEN AFTER THIS IS DONE.
+{: .warning}
+The command "fix-extracted-lightmaps (scenario_path)" will take the cluster blocks from SBSP and copy it over to the lightmap cluster block. This will let you relight extracted maps.

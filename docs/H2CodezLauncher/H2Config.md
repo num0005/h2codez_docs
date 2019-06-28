@@ -119,3 +119,6 @@ Value needs to be multiples of 512 in order to not be blacklisted.
 {: .warning}
 
 Changes the layout of the data. Really more of a proof of concept than anything else. Value starts from 0 and goes up in multiples of 512 if you want to avoid issues.
+
+#####fixup_extracted_bitmaps = X
+Repair extracted bitmaps on package. Enable or disable with a true or false.
