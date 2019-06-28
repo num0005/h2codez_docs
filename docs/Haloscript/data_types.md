@@ -58,7 +58,7 @@ The following types are tags/tag refs:
 * `lightmap definition`
 * `style`
 
-Style is only a tag ref in h2codez, it's non-functional in the release HEK and wasn't quite a tag ref in the Bungie HEK.
+Style is only a tag ref in H2Codez, it's non-functional in the release HEK and wasn't quite a tag ref in the Bungie HEK.
 {: .info}
 
 ### Enums ###

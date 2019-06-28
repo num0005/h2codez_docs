@@ -1,5 +1,5 @@
 title:      H2Tool - Links
-desc:       Various links for H2tool related tasks.
+desc:       Various links for H2Tool related tasks.
 template:   document
 nav:        H2Tool>H2Tool Links
 percent:    100

@@ -15,7 +15,7 @@ You will see a new option in the toolbar labeled "Window". It will has three opt
  
 ## Scenario Type
 You could choose the scenario type before however the strings for the scenario type were commented out.
-Click on the mission folder in "Hierarchy Pane" then you can change the type in the "Properties Palette". You can select your scenario type here and H2tool will compile what you decide.
+Click on the mission folder in "Hierarchy Pane" then you can change the type in the "Properties Palette". You can select your scenario type here and H2Tool will compile what you decide.
  
 ## Run Commands
 Allows you to run commands from a new input box.
@@ -38,5 +38,5 @@ Baggage.txt is a txt file that was output upon hitting CTRL+Shift+B in H1Sapien.
 With H2Codez the file will be properly written for you to view. This file can be used to view the amount of data a certain type of tag is taking up allowing you to easily see issues related to overflow.
  
 ## In-Game Display Settings
-If you click the scenarios tab in H2Sapien it will reveal a new option in the drop down window called "In-Game Display Settings". This will change your Sapien display settings to more closely resemble the ingame options you have set in your Halo 2 copy. This will allow the modder to see things like environment maps and higher game view resolution in H2Sapien.
+If you click the scenarios tab in H2Sapien it will reveal a new option in the drop down window called "In-Game Display Settings". This will change your H2Sapien display settings to more closely resemble the ingame options you have set in your Halo 2 copy. This will allow the modder to see things like environment maps and higher game view resolution in H2Sapien.
 

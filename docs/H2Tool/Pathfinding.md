@@ -6,7 +6,7 @@ percent:    100
 date:       2018/12/07
 authors:    General_101
 
-THIS PART IS EXPIREMENTAL. DO NOT EXPECT ANYTHING TOO ADVANCED OR FOR STUFF TO WORK PROPERLY. LOTS OF RESEARCH IN THIS AREA IS STILL NEEDED.
+THIS PART IS EXPERIMENTAL. DO NOT EXPECT ANYTHING TOO ADVANCED OR FOR STUFF TO WORK PROPERLY. LOTS OF RESEARCH IN THIS AREA IS STILL NEEDED.
 {: .warning}
 
 That being said a command has been added that may aid you in research or an attempt to make AI maps. The command goes by

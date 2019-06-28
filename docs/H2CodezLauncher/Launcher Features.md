@@ -10,7 +10,7 @@ authors:    General_101
 Do not use this at the moment unless you understand what you are doing. Using this option will leave you with an unknown crash at time of writing.
 {: .warning}
 
-When a map is built H2tool checks the assets of the map against a tag list for shared and then does not package the assets that exist while leaving a reference to shared in the scenario file. 
+When a map is built H2Tool checks the assets of the map against a tag list for shared and then does not package the assets that exist while leaving a reference to shared in the scenario file. 
 H2Codez has an option to ignore this and instead package all dependencies on your map into your map file. This can be used to overwrite default files such as a custom globals.globals which allows for custom bipeds and weapons. 
 
 As a workaround until this is solved you can use the following link in order to have some more control over your map than you would previously.

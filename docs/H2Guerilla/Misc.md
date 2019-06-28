@@ -41,5 +41,5 @@ If you hold down ALT while opening a tag from the hierarchy menu you will be gre
 row colored blue will allow you to reveal more information about that section for editing.
  
 ## Sound Editing
-Sound tags imported from CE can be used in H2EK by compiling them in H1tool with the XBADPCM codec. Editing them in H2Guerilla would normally result in a crash however this should be solved as of the latest H2Codez update.
+Sound tags imported from CE can be used in H2EK by compiling them in H1Tool with the XBADPCM codec. Editing them in H2Guerilla would normally result in a crash however this should be solved as of the latest H2Codez update.
 Issue was a crash caused by a template in the sound effect block that would be solved by disabling template view.

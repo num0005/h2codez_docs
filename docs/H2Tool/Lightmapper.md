@@ -5,7 +5,7 @@ nav:        H2Tool>Lightmapper
 percent:    100
 date:       2019/2/10
 authors:    General_101
-            num005
+            Num005
 
 Lightmapping in Halo 2 by default is a bit of a pain. Some maps you make could take days to finish on Super. This makes expansive maps with many different light sources be almost impossible to test quickly without doing tricks like
 cutting out the BSP you are testing or using lower quality lightmaps. At the time of current writing the lightmapper farm technique used during the development of Halo 2 has been brought back to a usable state. Here is how to use it.
