@@ -41,9 +41,13 @@ Restored Globals List
 cs movement_mode                   ai_combat_status
 
 815_global 2 ai_movement_combat    807_global 4 ai_combat_status_uninspected
+
 813_global 0 ai_movement_patrol    809_global 0 ai_combat_status_certain
+
 816_global 3 ai_movement_flee      804_global 1 ai_combat_status_idle
+
                                    806_global 3 ai_combat_status_active
+								   
                                    811_global 8 ai_combat_status_clear_los
 
 ## Increase BSP max depth
@@ -58,4 +62,5 @@ The command "fix-extracted-bitmaps" will load all the bitmaps in your tags folde
 ## Fix extracted lightmaps command
 THIS PART IS EXPIREMENTAL. YOU MAY STILL EXPIRENCE CRASHES WHILE ATTEMPING TO RELIGHT THE MAP EVEN AFTER THIS IS DONE.
 {: .warning}
+
 The command "fix-extracted-lightmaps (scenario_path)" will take the cluster blocks from SBSP and copy it over to the lightmap cluster block. This will let you relight extracted maps.
