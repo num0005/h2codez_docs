@@ -46,14 +46,20 @@ I'll add an explanation for the animations below if we have one.
 
 JMA
 ```markdown
+This is what a lot of animations will end up as. A default animation type that stores data necesary for movement.
+An example of this would be a walking animation.
 ```
 
 JMM
 ```markdown
+An animation type that is similar to JMA but leaves out redudant data that is not necessary for the cases it is used in.
+Examples are FP animations.
 ```
 
 JMT
 ```markdown
+This animation type is an animation inteded for turning animations
+Examples being how far chief can turn in a direction before he recenters himself.
 ```
 
 JMO
@@ -74,8 +80,12 @@ JMRX
 
 JMZ
 ```markdown
+This animation is basically what JMT was but for height instead of turning
+Examples being how chief turning up his body when looking up.
 ```
 
 JMW
 ```markdown
+This animation type is a world relative animation. This means that the origin of the animation is the 0, 0, 0 location of the level.
+Example usage of this animation type would be a level designer animating a pelican dropoff for a mission.
 ```
