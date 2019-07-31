@@ -34,8 +34,48 @@ script found in the Halo_Export.7z in H2Tool Links to export the file. Once you 
 like you would for collisions or physics. Remember that the name of the animation import file will be the name of the animation in the animation tag block. If you need the character ":" in the name such as "device:position" then 
 use a space as spaces in the name are converted to ":". After the file is in then you can just use the animation checkbox in the launcher for compile or type the following command in CMD.
 
-"h2tool append-animation (folder path)" 
+```markdown
+h2tool append-animation (folder path)
+```
 
 Keep in mind that this only adds and if the name already exists then it won't overwrite it.
 
 If you are at all aware with importing animations for CE then you should find most of this pretty similar.
+
+I'll add an explanation for the animations below if we have one.
+
+JMA
+```markdown
+```
+
+JMM
+```markdown
+```
+
+JMT
+```markdown
+```
+
+JMO
+```markdown
+This animation type like an additive animation, it adds movement to the base while keeping that movement intact.
+Example usage of overlay is a small hit animation that plays while you still want to keep a character able to perform it's running animation
+```
+
+JMR
+```markdown
+This animation type removes the original animation for the nodes that are animated and plays it's own animation for it.
+An example for a replacement is a reload animation where you want to make sure the node positions are proper at each part of the reload. In that case you would only animate the upper body, so the lower parts can keep their original base animation that for instance still is a running animation
+```
+
+JMRX
+```markdown
+```
+
+JMZ
+```markdown
+```
+
+JMW
+```markdown
+```
