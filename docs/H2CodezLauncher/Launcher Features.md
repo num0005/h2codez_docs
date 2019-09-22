@@ -15,7 +15,7 @@ H2Codez has an option to ignore this and instead package all dependencies on you
 
 As a workaround until this is solved you can use the following link in order to have some more control over your map than you would previously.
 
-[Edited Shared and Tags](https://mega.nz/#!Q0Mk2YzL!CLVagIOnZhS6zmFqn-HME5k6I_qcCsuRkh2s8QiGENE)
+[Edited Shared and Tags](https://mega.nz/#!05VQDSRK!_LbmTx7n1B1V7uUX77VMXxog4IDHYoJSVlf4Cypu19k)
 
 Download the linked zip and place the contents of this zip in your Halo 2 map editor folder. Backup anything it asks you to overwrite. This should allow you to have things like custom globals but keep in mind that this will blacklist your map unless
 Halo 2 was patched to prevent that. It will also break map names, descriptions, and team options in the pregame lobby. People can use this map like any other custom map. They do not need the edited shared in this zip.
