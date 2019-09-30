@@ -6,93 +6,93 @@ percent:    100
 date:       2019/9/30
 authors:    General_101
 
-Immovable Objects
+### Immovable Objects ###
 
-Objects in example.scenario can't be edited. How do I solve this?
+*Objects in example.scenario can't be edited. How do I solve this?*
 
-    Uncheck read-only from the folder properties in the tags folder in the map editor.
-
-
-Can't Add Tags in H2Sapien
-
-Can't seem to add tags I made to an object palette. Why is this happening?
-
-    This could be due to two reasons.
-
-        Follow the instructions in the "Immovable objects" section. Your scenario could just be read only.
-
-        If the tags exist outside of your map editor install such as the documents folder then H2Sapien can't add them. Move then into the map editor folder and try again.
+Uncheck read-only from the folder properties in the tags folder in the map editor.
 
 
-File Browser Doesn't Show All Tag Types
-When I use the file browser in H2Guerilla I can't see all the tags available. How do I get around this?
+### Can't Add Tags in H2Sapien ###
 
-    In the file browser window you will see a box called file name. Type the symbol "*" without quotes into the box and press enter. The file filter should be removed.
+*Can't seem to add tags I made to an object palette. Why is this happening?*
 
+This could be due to two reasons.
 
-Scenario Appears In File Browser But Doesn't in Windows Explorer.
+Follow the instructions in the "Immovable objects" section. Your scenario could just be read only.
 
-I saved or created a scenario a while ago and can see it fine when I open H2Sapien or H2Guerilla in the location I placed it but it doesn't exist when I look for it using explorer. What is going on?
-
-    The file is actually being stored in virtual store due to H2Sapien or H2Guerilla not having permission to save files in the folder it is being saved to. Either run the program as admin or change folder permissions.
+If the tags exist outside of your map editor install such as the documents folder then H2Sapien can't add them. Move then into the map editor folder and try again.
 
 
-Limited Editor
+### File Browser Doesn't Show All Tag Types ###
 
-I can only edit a few types of tags like shaders and bitmaps. How can I edit and create more tag types?
+*When I use the file browser in H2Guerilla I can't see all the tags available. How do I get around this?*
 
-    Install H2Codez by following the link [here](https://github.com/Project-Cartographer/H2-Toolkit-Launcher).
-
-
-Acceleration Range and Device Values
-
-Cache values differ from their unpackaged tag values for acceleration range and device machine. How do I get the original values.
-
-    Use the formula "X^(-1)" where X is the value you are trying to convert from a cache value to an unpackaged tag value.
+In the file browser window you will see a box called file name. Type the symbol "*" without quotes into the box and press enter. The file filter should be removed.
 
 
-Extracting Assets
+### Scenario Appears In File Browser But Doesn't in Windows Explorer ###
 
-I want to extract different types of assets for various reasons. What are my options?
+*I saved or created a scenario a while ago and can see it fine when I open H2Sapien or H2Guerilla in the location I placed it but it doesn't exist when I look for it using explorer. What is going on?*
 
-    The answer to this question depends on what assets and in what format exactly.
-
-        Level and character meshes for 3D editing software? - Use Adjutant and export them in the AMF format. This only works with Halo 2 Xbox map files though. There are no BSP ripping tools for H2V. The DAEConverter can dump render_model for H2V into OBJ files but these have no weights or materials.
-
-            [Adjutant Download](http://forum.halomaps.org/index.cfm?page=topic&amp;topicID=45590)
-
-        Textures and sounds in their raw image or .wav format? - Use MEK for both of these. Adjutant can do bitmap extraction as well but MEK can extract from Halo 2 Vista.
-
-        Halo 2 animations for 3D editing software? - There is an animation exporter script provided with the MEK download. Only works with Halo 2 Xbox map files.
-
-            [MEK Download](https://bitbucket.org/Moses_of_Egypt/mek/downloads/)
-
-        Halo 2 tag files to make awesome SP mods? - A work in progress tag extractor can be found below. Likely won't be what you're looking for but lets see how far we can go.
-
-            [Tag Extractor Download](https://halo2.online/threads/tag-extractor-for-magical-doctor-wizard-researchers-only.2076/)
+The file is actually being stored in virtual store due to H2Sapien or H2Guerilla not having permission to save files in the folder it is being saved to. Either run the program as admin or change folder permissions.
 
 
-No Sentinel Beam
+### Limited Editor ###
 
-I tried placing the sentinel beam and nothing appears in Sapien or ingame. What gives?
+*I can only edit a few types of tags like shaders and bitmaps. How can I edit and create more tag types?*
 
-    The map editor didn't come with the .weapon tag but came with pretty much everything else. Just extract the .weapon tag with the tag extractor or use this link.
-
-        [Sentinel Beam Weapon Tag](https://mega.nz/#%2154tWkKoA%2199KLJe7yDeDXxXqo85LFyhfkOjyuJ6WhSufMRlwiz-4)
+Install H2Codez by following the link [here](https://github.com/Project-Cartographer/H2-Toolkit-Launcher).
 
 
-Custom Sounds
+### Acceleration Range and Device Values ###
 
-I'm in need of some new sounds but I don't see a way to compile them in H2Tool. Do I have any options?
+*Cache values differ from their unpackaged tag values for acceleration range and device machine. How do I get the original values.*
 
-    Compile the sound with H1Tool using the Xbox Audio Codec. H2 has some backwards compatibility with some Halo 1 tags.
+Use the formula "X^(-1)" where X is the value you are trying to convert from a cache value to an unpackaged tag value.
 
 
-Assembly Plugin
+### Extracting Assets ###
 
-Assembly is pretty incomplete in some areas for H2V. Any newer plugins out there?
+*I want to extract different types of assets for various reasons. What are my options?*
 
-    Grab the plugins from the link below. The readme inside details what xml files have changed. Otherwise it is a default xml file from the latest Assembly version at time of writing.
+The answer to this question depends on what assets and in what format exactly.
 
-        [Assembly Plugins](https://cdn.discordapp.com/attachments/434382924700319745/599071354549043220/Autogenerated_but_kinda_edited_plugins_for_Assembly.7z)
-		
+Level and character meshes for 3D editing software? - Use Adjutant and export them in the AMF format. This only works with Halo 2 Xbox map files though. There are no BSP ripping tools for H2V. The DAEConverter can dump render_model for H2V into OBJ files but these have no weights or materials.
+
+[Adjutant Download](http://forum.halomaps.org/index.cfm?page=topic&amp;topicID=45590)
+
+Textures and sounds in their raw image or .wav format? - Use MEK for both of these. Adjutant can do bitmap extraction as well but MEK can extract from Halo 2 Vista.
+
+Halo 2 animations for 3D editing software? - There is an animation exporter script provided with the MEK download. Only works with Halo 2 Xbox map files.
+
+[MEK Download](https://bitbucket.org/Moses_of_Egypt/mek/downloads/)
+
+Halo 2 tag files to make awesome SP mods? - A work in progress tag extractor can be found below. Likely won't be what you're looking for but lets see how far we can go.
+
+[Tag Extractor Download](https://halo2.online/threads/tag-extractor-for-magical-doctor-wizard-researchers-only.2076/)
+
+
+### No Sentinel Beam ###
+
+*I tried placing the sentinel beam and nothing appears in Sapien or ingame. What gives?*
+
+The map editor didn't come with the .weapon tag but came with pretty much everything else. Just extract the .weapon tag with the tag extractor or use this link.
+
+[Sentinel Beam Weapon Tag](https://mega.nz/#%2154tWkKoA%2199KLJe7yDeDXxXqo85LFyhfkOjyuJ6WhSufMRlwiz-4)
+
+
+### Custom Sounds ###
+
+*I'm in need of some new sounds but I don't see a way to compile them in H2Tool. Do I have any options?*
+
+Compile the sound with H1Tool using the Xbox Audio Codec. H2 has some backwards compatibility with some Halo 1 tags.
+
+
+### Assembly Plugin ###
+
+*Assembly is pretty incomplete in some areas for H2V. Any newer plugins out there?*
+
+Grab the plugins from the link below. The readme inside details what xml files have changed. Otherwise it is a default xml file from the latest Assembly version at time of writing.
+
+[Assembly Plugins](https://cdn.discordapp.com/attachments/434382924700319745/599071354549043220/Autogenerated_but_kinda_edited_plugins_for_Assembly.7z)
