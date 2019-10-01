@@ -49,7 +49,7 @@ Install H2Codez by following the link [here](https://github.com/Project-Cartogra
 
 *Cache values differ from their unpackaged tag values for acceleration range and device machine. How do I get the original values.*
 
-Use the formula "X^(-1)" where X is the value you are trying to convert from a cache value to an unpackaged tag value.
+Use the formula "1/X" where X is the value you are trying to convert from a cache value to an unpackaged tag value.
 
 
 ### Extracting Assets ###
