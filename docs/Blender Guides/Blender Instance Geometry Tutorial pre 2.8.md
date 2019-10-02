@@ -6,15 +6,15 @@ percent:    75
 date:       2019/9/30
 authors:    General_101
 
-http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z -> Export scripts for your 3D modeling software of choice.
+[Halo Export Scripts](http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z) -> Export scripts for your 3D modeling software of choice.
 
-https://www.blender.org/ -> The Blender modeling program itself.
+[Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
 
-https://mega.nz/#!oodATZiI!cmQx44g8ghK2XOts8qHo-iDYcwydiIKBRZqW4_RM19s -> The end product of the first tutorial for Blender for you to examine and compare.
+[End Result of First Tutorial](https://mega.nz/#!oodATZiI!cmQx44g8ghK2XOts8qHo-iDYcwydiIKBRZqW4_RM19s) -> The end product of the first tutorial for Blender for you to examine and compare.
 
-https://mega.nz/#!UoEjnKBJ!6d6M5U5fb5fcIHrkN_j1ezXNauL70YSQnpc-Y9vwle0 -> The end product of the this tutorial for Blender for you to examine and compare.
+[End Result](https://mega.nz/#!UoEjnKBJ!6d6M5U5fb5fcIHrkN_j1ezXNauL70YSQnpc-Y9vwle0) -> The end product of the this tutorial for Blender for you to examine and compare.
 
-https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg -> Spartan model that should be to scale with the ingame player.
+[Spartan Model](https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg) -> Spartan model that should be to scale with the ingame player.
 
 Hi again and welcome to my second tutorial on working with the Halo 2 Blender exporter. 
 In this tutorial we are going to cover how to use instance geometry in Blender for Halo 2. This guide assumes you have followed the first part.
@@ -36,7 +36,7 @@ The second step is to make sure your object is properly sealed as it will still 
 Your third and final step is to then name the object properly. The naming of instance geo starts with the % and your object name. Our object will be called spire so it will become %spire.
 Your scene should look something like this.
 
-![](http://i.imgur.com/ntmzVBT.png)
+![](assets\2.79\2A.png)
 
 Now we want multiple copies of this mesh all over our map so let us create linked duplicates of our object. Go into object mode and select your %spire object then hit duplicate linked. You will now get a cloned object and you will notice that when you go into edit mode that it selects both of the objects.
 Any changes you make to either of them will be transferred across all instances in your scene. If you have already made a duplicate of an object without linking them then you can do this by first selecting the object you want to turn into an instance and the object you want to link it to.
@@ -45,7 +45,7 @@ Now that you have finished placing your instance geometry you should properly na
 For recap you start by naming an object %(Object name) and calling the instances %(Object name used previously)xx. You should start with 01 and then go from there.
 When you are done it should look like this image.
 
-![](http://i.imgur.com/d9AkfuQ.png)
+![](assets\2.79\2B.png)
 
 Your work here is done. You can now use this knowledge to create instance geometry for your Halo 2 maps. You can move on for now but this last section will show you the benefits of such methods. I have exported to files here.
 One has instance geometry properly set up and the other does not. They are named tutorial and tutorial20 respectably. While not a huge difference due to the simplicity of our map you can already see the difference in the exported ASS files.
