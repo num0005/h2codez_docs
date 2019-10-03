@@ -1,7 +1,7 @@
 title:      Blender Instance Geometry Tutorial pre 2.8
 desc:       Notes on making instance geometry with versions of Blender before 2.8
 template:   document
-nav:        Blender>Instance Geometry Tutorial pre 2.8
+nav:        Blender Tutorial>Instance Geo 2.79
 percent:    75
 date:       2019/9/30
 authors:    General_101
