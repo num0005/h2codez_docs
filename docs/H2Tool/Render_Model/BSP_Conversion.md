@@ -7,7 +7,7 @@ date:       2018/12/07
 authors:    General_101
 
 # Links
-[Example files](https://mega.nz/#!BpFzHaQQ!zj1lH0FhUk83_6OarKwuTy5ueijLzD2mtFFM3AnOGAY) for the render model importing.
+[Example files](http://www.h2maps.net/Sources/H2EK%20Source/Manual/BSPConverter/Example%20Render%20Model.7z) for the render model importing.
 
 In order to import a working render model one must first export a valid ASS file. You will want to assign your shaders for the model somewhere in the shader_collection so that they are assigned to the BSP during compile.
 This will help you later. A good method to prevent out of BSP errors is to surround your model in a box and give it a unique shader with the @ shader symbol at the end of the shader name. 

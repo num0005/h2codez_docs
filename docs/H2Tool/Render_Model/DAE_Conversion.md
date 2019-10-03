@@ -28,15 +28,15 @@ The source code of the program we are using to build our models.
 
 The modeling program we will be using in this tutorial. Also the only one that will work for sure with our DAE converter. 3DS Max has not been tested cause 3DS Max is for uncool and unloved kids.
 
-[Example Model](https://mega.nz/#!kgFGnQpZ!ctIqEpuoUttfArvCH1JXGDzkafk6FxOHWCu5YuGfi1Y)
+[Example Model](http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/rigbegin.blend)
 
 Our example model for beginners. We will use this to hopefully show you the way around the program
 
-[End Result of Example Model](https://mega.nz/#!F8VSAQBa!XN0OQsEKcZT5y7bJYI-sM2Vjs71g_nIxGOB1OA7rlak)
+[End Result of Example Model](http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/rigend.blend)
 
 Our example model that we made except finished if you do not understand a part and need a visual representation.
 
-[End Result of Example Armature](https://mega.nz/#!wotgVSRA!fJLFRf0egCoHRCcMtvyAWw88IsqQwgbq5CyoqMgiB3o)
+[End Result of Example Armature](http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/armature.blend)
 
 The armature we will need for our skeleton. When you make armatures for different skeletons follow this setup
 

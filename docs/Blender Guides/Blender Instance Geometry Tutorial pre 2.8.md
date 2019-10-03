@@ -10,11 +10,11 @@ authors:    General_101
 
 [Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
 
-[End Result of First Tutorial](https://mega.nz/#!oodATZiI!cmQx44g8ghK2XOts8qHo-iDYcwydiIKBRZqW4_RM19s) -> The end product of the first tutorial for Blender for you to examine and compare.
+[End Result of First Tutorial](http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Tutorial.blend) -> The end product of the first tutorial for Blender for you to examine and compare.
 
-[End Result](https://mega.nz/#!UoEjnKBJ!6d6M5U5fb5fcIHrkN_j1ezXNauL70YSQnpc-Y9vwle0) -> The end product of the this tutorial for Blender for you to examine and compare.
+[End Result](http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Tutorial2.blend) -> The end product of the this tutorial for Blender for you to examine and compare.
 
-[Spartan Model](https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg) -> Spartan model that should be to scale with the ingame player.
+[Spartan Model](http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Spartan.zip) -> Spartan model that should be to scale with the ingame player.
 
 Hi again and welcome to my second tutorial on working with the Halo 2 Blender exporter. 
 In this tutorial we are going to cover how to use instance geometry in Blender for Halo 2. This guide assumes you have followed the first part.

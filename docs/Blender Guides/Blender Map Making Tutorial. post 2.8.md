@@ -10,9 +10,9 @@ authors:    General_101
 
 [Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
 
-[End Result](https://mega.nz/#!NkUi1A5R!Vh53XXavIu2v2Eguu0y2bIR9NOZ0pK8vRoPUGKfuPZs) -> The end product of this tutorial for Blender for you to examine and compare.
+[End Result](http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Tutorial2.8.blend) -> The end product of this tutorial for Blender for you to examine and compare.
 
-[Spartan Model](https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg) -> Spartan model that should be to scale with the ingame player.
+[Spartan Model](http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Spartan.zip) -> Spartan model that should be to scale with the ingame player.
 
 Hello!
 
