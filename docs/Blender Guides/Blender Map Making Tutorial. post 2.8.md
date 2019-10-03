@@ -1,16 +1,15 @@
-title:      Blender Map Making Tutorial post 2.8
+title:      Blender Map Making 2.8
 desc:       Notes on making maps with versions of Blender after 2.8
 template:   document
-nav:        Blender>Map Making Tutorial post 2.8
+nav:        Blender Tutorial>Map Making 2.8
 percent:    75
 date:       2019/9/30
 authors:    General_101
 
-http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z -> Export scripts for your 3D modeling software of choice.
-https://www.blender.org/ -> The Blender modeling program itself.
-https://mega.nz/#!NkUi1A5R!Vh53XXavIu2v2Eguu0y2bIR9NOZ0pK8vRoPUGKfuPZs -> The end product of this tutorial for Blender for you to examine and compare.
-
-https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg -> Spartan model that should be to scale with the ingame player.
+[Halo Export Scripts](http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z) -> Export scripts for your 3D modeling software of choice.
+[Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
+[End Result](https://mega.nz/#!NkUi1A5R!Vh53XXavIu2v2Eguu0y2bIR9NOZ0pK8vRoPUGKfuPZs) -> The end product of this tutorial for Blender for you to examine and compare.
+[Spartan Model](https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg) -> Spartan model that should be to scale with the ingame player.
 
 Hello!
 
