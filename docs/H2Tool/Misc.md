@@ -49,15 +49,23 @@ cs_movement_mode
 
 ai_combat_status
 
-	809_global 0 ai_combat_status_certain
+	803_global 0 ai_combat_status_certain
 
 	804_global 1 ai_combat_status_idle
 	
+	805_global 2 ai_combat_status_alert
+
 	806_global 3 ai_combat_status_active
 
 	807_global 4 ai_combat_status_uninspected
-
+	
+	808_global 5 ai_combat_status_definite
+	
+	810_global 7 ai_combat_status_visible
+	
 	811_global 8 ai_combat_status_clear_los
+	
+	812_global 9 ai_combat_status_dangerous
 
 ## Increase BSP max depth
 A passive change to H2tool's level compiler that allows for more detailed geometry to be imported. Increased to a maximum value of 512.
@@ -73,3 +81,6 @@ THIS PART IS EXPERIMENTAL. YOU MAY STILL EXPERIENCE CRASHES WHILE ATTEMPTING TO 
 {: .warning}
 
 The command "fix-extracted-lightmaps (scenario_path)" will take the cluster blocks from SBSP and copy it over to the lightmap cluster block. This will let you relight extracted maps.
+
+## Dump model node equations command
+The command "dump-node-mode-equations (render_model)" will dump equations that can be solved in Wolfram Alpha to get the original position from the inverse position.

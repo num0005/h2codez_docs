@@ -12,21 +12,16 @@ Animation importing is now a feature H2Codez adds to the toolkit and this page w
 the same skeleton setup in 3D editing software as you do in the model_animation_graph tag you plan on adding an animation file. I will not be going over how to do this part as this is outside the area of my expertise but be aware 
 that any CE or any general animation tutorial for 3DS Max will give you what you need to get here. Once you have finished an animation you wish to export you may then export the file.
 
-jma     - animation
-
-jmm     - moving
-
-jmt     - rotation
-
-jmo     - overlay
-
-jmr     - replacement
-
-jmrx    - replacement extended
-
-jmz     - 3d animation
-
-jmw     - world animation
+| Name                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JMA  - animation            | This is what a lot of animations will end up as. A default animation type that stores data necesary for movement. An example of this would be a walking animation. |
+| JMM  - moving               | An animation type that is similar to JMA but leaves out redudant data that is not necessary for the cases it is used in. Examples are FP animations. |
+| JMT  - rotation             | This animation type is an animation inteded for turning animations Examples being how far chief can turn in a direction before he recenters himself. |
+| JMO  - overlay              | This animation type like an additive animation, it adds movement to the base while keeping that movement intact. Example usage of overlay is a small hit animation that plays while you still want to keep a character able to perform it's running animation |
+| JMR  - replacement          | This animation type removes the original animation for the nodes that are animated and plays it's own animation for it. An example for a replacement is a reload animation where you want to make sure the node positions are proper at each part of the reload. In that case you would only animate the upper body, so the lower parts can keep their original base animation that for instance still is a running animation |
+| JRMX - replacement extended | No Idea |
+| JMZ  - 3d animation         | This animation is basically what JMT was but for height instead of turning Examples being how chief turning up his body when looking up. |
+| JMW  - world animation      | This animation type is a world relative animation. This means that the origin of the animation is the 0, 0, 0 location of the level. Example usage of this animation type would be a level designer animating a pelican dropoff for a mission. |
 
 Be aware that the different extension types do have an affect on how the animation functions ingame. Each of them have a purpose and H2Tool will try to steer you in the right direction for what type you will need. If you need a 
 different type to please H2Tool then reexport the file instead of just changing the extension. There are some differences in how each of them are exported. In order to export the animation use the cad_animationExporter_compact.mse
@@ -41,51 +36,3 @@ h2tool append-animation (folder path)
 Keep in mind that this only adds and if the name already exists then it won't overwrite it.
 
 If you are at all aware with importing animations for CE then you should find most of this pretty similar.
-
-I'll add an explanation for the animations below if we have one.
-
-JMA
-```markdown
-This is what a lot of animations will end up as. A default animation type that stores data necesary for movement.
-An example of this would be a walking animation.
-```
-
-JMM
-```markdown
-An animation type that is similar to JMA but leaves out redudant data that is not necessary for the cases it is used in.
-Examples are FP animations.
-```
-
-JMT
-```markdown
-This animation type is an animation inteded for turning animations
-Examples being how far chief can turn in a direction before he recenters himself.
-```
-
-JMO
-```markdown
-This animation type like an additive animation, it adds movement to the base while keeping that movement intact.
-Example usage of overlay is a small hit animation that plays while you still want to keep a character able to perform it's running animation
-```
-
-JMR
-```markdown
-This animation type removes the original animation for the nodes that are animated and plays it's own animation for it.
-An example for a replacement is a reload animation where you want to make sure the node positions are proper at each part of the reload. In that case you would only animate the upper body, so the lower parts can keep their original base animation that for instance still is a running animation
-```
-
-JMRX
-```markdown
-```
-
-JMZ
-```markdown
-This animation is basically what JMT was but for height instead of turning
-Examples being how chief turning up his body when looking up.
-```
-
-JMW
-```markdown
-This animation type is a world relative animation. This means that the origin of the animation is the 0, 0, 0 location of the level.
-Example usage of this animation type would be a level designer animating a pelican dropoff for a mission.
-```
