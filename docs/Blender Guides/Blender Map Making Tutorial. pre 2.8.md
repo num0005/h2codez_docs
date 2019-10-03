@@ -7,8 +7,11 @@ date:       2019/9/30
 authors:    General_101
 
 [Halo Export Scripts](http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z) -> Export scripts for your 3D modeling software of choice.
+
 [Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
+
 [End Result](https://mega.nz/#!oodATZiI!cmQx44g8ghK2XOts8qHo-iDYcwydiIKBRZqW4_RM19s) -> The end product of this tutorial for Blender for you to examine and compare.
+
 [Spartan Model](https://mega.nz/#!Fo0kRBwL!RHAZkPfnt0oTa0bmHO1Y_it1hltZqaG8wp0LIaz5aeg) -> Spartan model that should be to scale with the ingame player.
  
 Hello!
