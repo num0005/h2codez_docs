@@ -28,7 +28,7 @@ to the next part of the model.
 
 ![](assets/BSPConversionStep2.png)
 
-Here you will setup your model origin. Left is what an freshly imported render model looks like and left is what we want it to look like to work. You will want to add a node and then give it a name. Fill in the values with the
+Here you will setup your model origin. Left is what an freshly imported render model looks like and right is what we want it to look like to work. You will want to add a node and then give it a name. Fill in the values with the
 ones that are shown in the image. Not doing this can result in the model not appearing ingame.
 
 ![](assets/BSPConversionStep3.png)
