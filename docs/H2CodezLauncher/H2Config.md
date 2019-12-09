@@ -103,9 +103,6 @@ Changes the process name of H2Sapien to solve a graphical issue on some Nvidia c
 #####enable_cache_writer_patches = X
 Enables patches meant to edit how H2tool writes out the cache file data. Pretty much only related to cache_file_alignment at the moment. Enable or disable with a true or false.
 
-#####disable_debug_tag_names = X
-Don't add tag names to the cache file. Enable or disable with a true or false.
-
 #####disable_sound_references_postprocessing = X
 
 This may cause your map to get blacklisted from the custom maps list due to a large amount of tags. Do not use this unless Halo2.exe has been patched for this.
@@ -122,3 +119,12 @@ Changes the layout of the data. Really more of a proof of concept than anything 
 
 #####fixup_extracted_bitmaps = X
 Repair extracted bitmaps on package. Enable or disable with a true or false.
+
+#####dump_intermediate_lightmaps = X
+This will dump the inbetween form of the about to be combined radiance bitmaps during lightmap merging. Enable or disable with a true or false
+
+#####increase_lightmap_size = X
+Remove lightmap resolution restriction. Enable or disable with a true or false
+
+#####show_all_fields = X
+Show all hidden or unnamed fields in H2Guerilla. Enable or disable with a true or false.
