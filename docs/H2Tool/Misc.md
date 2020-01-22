@@ -84,3 +84,18 @@ The command "fix-extracted-lightmaps (scenario_path)" will take the cluster bloc
 
 ## Dump model node equations command
 The command "dump-node-mode-equations (render_model)" will dump equations that can be solved in Wolfram Alpha to get the original position from the inverse position.
+
+## Multi language strings
+Creating a folder called data_(language code) and placing an identical path for a text file will compile both an english string from data and an additional string from the newly created data_(language code) folder you created.
+You can use this to add multi language support to your string tags. See the markdown below for details on the language codes avaliable. 
+
+```markdown
+jpn
+de
+fr
+sp
+it
+kor
+cht
+pt
+```

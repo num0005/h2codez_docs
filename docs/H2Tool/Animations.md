@@ -37,7 +37,7 @@ Keep in mind that this only adds and if the name already exists then it won't ov
 
 If you are at all aware with importing animations for CE then you should find most of this pretty similar.
 
-JMA file layout
+JMA file spec
 ```markdown
 <VERSION min = 16390, max = 16395>
 <IF VERSION >= 16394<VERSION PART 2>  >
