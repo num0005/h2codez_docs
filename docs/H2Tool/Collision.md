@@ -3,73 +3,23 @@ desc:       Preparing JMS files for importing with H2Tool to create working coll
 template:   document
 nav:        H2Tool>Collision Tags
 percent:    100
-date:       2018/12/07
+date:       2020/2/04
 authors:    General_101
 
 Be warned that when you generate a new collision tag that it will be placed outside of the parent directory. Move it back in afterwards.
 {: .warning}
 
-Collision tags in Halo 2 are created by exporting JMS files in UTF-16 format and making some specific changes to how the material and node names are done. We can then import the JMS file with H2Tool to get our working collision_model tags.
-Let's get started by making the necessary changes to a freshly exported JMS file from either Blender or 3DS Max. Open it in Notepad++ and look to the first few lines that should look something like this
-```markdown
-8200
-1
-1
-frame
--1
--1
-0.000000    0.000000    0.000000    1.000000
-0.000000    0.000000    0.000000
-```
-Add a "b_" before the name of the node in order to avoid an error related to whitespace.
-```markdown
-8200
-1
-1
-b_frame
--1
--1
-0.000000    0.000000    0.000000    1.000000
-0.000000    0.000000    0.000000
-```
-Lets break down this section so that everything is clear.
-```markdown
-(JMS Version Number)
-(Node List Checksum)
-(Frame Count)
-(Frame Name)
-(Child Frame)
-(Sibling Frame)
-(I Rotation)    (J Rotation)    (K Rotation)    (W Rotation)
-(X Translation) (Y Translation) (Z Translation)
-```
-Next we will solve an error related to the entire model being imported as one region and a material flag not making sense. You can fix this by changing <none> material from this....
-```markdown
-1
-metal
-<none>
-0
-1
-unnamed
-```
-To this
-```markdown
-1
-metal
-base metal
-0
-2
-base
-metal
-```
-This changes the <none> to a permutation and a region in that order. It also adds the names of all the regions and permutations in one big list. Lets also break this list down for clarity.
-```markdown
-(Material Count)
-(Material Name)
-(Permutation) (Region)
-(Marker Count)
-(Name Count)
-(Names of permutations and regions listed here)
-```
-The final step is to change the encoding. Open up the text file in Notepad++ and change the encoding from whatever it currently is to UCS-2 LE BOM. H2Tool should now accept your JMS files without issues assuming they are valid.
+[Halo Export Scripts](http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z) -> Export scripts for your 3D modeling software of choice.
+
+[Blender Program](https://www.blender.org/) -> The Blender modeling program itself.
+
+Collision tags in Halo 2 are created by exporting JMS files in UTF-16 format. We can then import the JMS file with H2Tool to get our working collision_model tags.
+
+Start by installing the Blend2Halo2-JMSv2.py script found in the Halo_Export.7z archive to be able to export valid JMS files for Halo 2. This script should do what you need for rigged meshes.
+
+Once you have that script go to your Blender scene and add an armature object. Leave it named Armature as the script specifically looks for an object named this at the moment. Add the amount of bones you need from here.
+Create the mesh and morph untill you have the collision shape you need. Be aware that collisions should be simple and use fewer polys when compared to a render_model. You want as few as possible for memory reasons.
+Once the mesh is modeled you can use weight paint to define what parts belong to what node. Make sure that each seperate piece is only rigged to a single node. Collisions do not take skinned meshes so seperate your collision in
+chunks and weight each piece at maximum strength for that node. Once this is done you should be able to export the collision and import it for H2Tool
+
 Place the JMS file inside a folder labeled "collision" and browse the the parent folder that you created the collision folder in using the launcher. Hit compile while having collisions checkmarked.
