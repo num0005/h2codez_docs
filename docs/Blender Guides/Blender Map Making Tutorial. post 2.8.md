@@ -159,18 +159,4 @@ Ensure that you are in face selection mode in the UV editor as I will show you n
 
 ![](assets\2.8\13.png)
 
-Now if this was 3DS Max you would be about ready to export the final product. This is Blender though and a few extra steps must be taken. These are crucial for the map to export properly so follow them closely.
-Let use first zoom in on our b_levelroot using the hotkey . to zoom in.
-Every single object you make in Blender must have its faces be converted to triangles. This is important as the exporter and Halo 2 will not accept it otherwise. You don't have to worry about this too much since the exporter will try to triangulate things before exporting them.
-Select your b_levelroot and go into edit mode then hit hotkey A to ensure it selects all.
-Go to Faces->Triangulate Faces. Your UV sphere should be made out of triangles now.
-
-![](assets\2.8\14.png)
-
-Every single object must also be unwrapped including the b_levelroot mesh. Simply select all faces and hit Smart UV Unwrap. This is all you have to do for the b_levelroot to be done with UVs.
-All objects including the b_levelroot must have a material even if it has no texture. Add a new material to the b_levelroot and assign it. This is all you have to do here.
-The final result should look something like this. Disable textures solids to see diffuse again.
-
-![](assets\2.8\15.png)
-
-Do the same for all other objects in the scene. One this is done you can then go to File->Export-Halo 2 asset. You should see no errors show up on the top right. Your ASS file should be ready and accepted by tool.
+One this is done you can then go to File->Export-Halo 2 asset. You should see no errors show up on the top right. Your ASS file should be ready and accepted by tool.
