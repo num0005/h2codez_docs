@@ -19,7 +19,7 @@ that any CE or any general animation tutorial for 3DS Max will give you what you
 | JMT  - rotation             | This animation type is an animation inteded for turning animations Examples being how far chief can turn in a direction before he recenters himself. |
 | JMO  - overlay              | This animation type like an additive animation, it adds movement to the base while keeping that movement intact. Example usage of overlay is a small hit animation that plays while you still want to keep a character able to perform it's running animation |
 | JMR  - replacement          | This animation type removes the original animation for the nodes that are animated and plays it's own animation for it. An example for a replacement is a reload animation where you want to make sure the node positions are proper at each part of the reload. In that case you would only animate the upper body, so the lower parts can keep their original base animation that for instance still is a running animation |
-| JRMX - replacement extended | No Idea |
+| JMRX - replacement extended | No Idea |
 | JMZ  - 3d animation         | This animation is basically what JMT was but for height instead of turning Examples being how chief turning up his body when looking up. |
 | JMW  - world animation      | This animation type is a world relative animation. This means that the origin of the animation is the 0, 0, 0 location of the level. Example usage of this animation type would be a level designer animating a pelican dropoff for a mission. |
 
