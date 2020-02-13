@@ -23,11 +23,11 @@ that any CE or any general animation tutorial for 3DS Max will give you what you
 | JMZ  - 3d animation         | This animation is basically what JMT was but for height instead of turning Examples being how chief turning up his body when looking up. |
 | JMW  - world animation      | This animation type is a world relative animation. This means that the origin of the animation is the 0, 0, 0 location of the level. Example usage of this animation type would be a level designer animating a pelican dropoff for a mission. |
 
-Be aware that the different extension types do have an affect on how the animation functions ingame. Each of them have a purpose and H2Tool will try to steer you in the right direction for what type you will need. If you need a 
-different type to please H2Tool then reexport the file instead of just changing the extension. There are some differences in how each of them are exported. In order to export the animation use the cad_animationExporter_compact.mse
-script found in the Halo_Export.7z in H2Tool Links to export the file. Once you have the file go ahead an edit it in notepad++ and change the encoding to "UCS-2 LE BOM". When this is done place it in a folder labled "animations" 
-like you would for collisions or physics. Remember that the name of the animation import file will be the name of the animation in the animation tag block. If you need the character ":" in the name such as "device:position" then 
-use a space as spaces in the name are converted to ":". After the file is in then you can just use the animation checkbox in the launcher for compile or type the following command in CMD.
+Be aware that the different extension types do have an affect on how the animation functions ingame. Each of them have a purpose and H2Tool will try to steer you in the right direction for what type you will need. 
+The files themselves however have no differences besides extension. In order to export the animation use the cad_animationExporter_compact.mse script for 3DS Max and Blend2Halo2-Animation.py for Blender. 
+Both of these files are found in the Halo_Export.7z in H2Tool Links to export the file. When this is done place it in a folder labled "animations" like you would for collisions or physics. 
+Remember that the name of the animation import file will be the name of the animation in the animation tag block. If you need the character ":" in the name such as "device:position" then use a space as spaces in the name are 
+converted to ":". After the file is in then you can just use the animation checkbox in the launcher for compile or type the following command in CMD.
 
 ```markdown
 h2tool append-animation (folder path)
