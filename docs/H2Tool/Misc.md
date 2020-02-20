@@ -3,7 +3,7 @@ desc:       Changes that seem important enough to mention but not important enou
 template:   document
 nav:        H2Tool>H2Tool Misc
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 ## Unlocked Scenario Compiling
@@ -86,8 +86,8 @@ The command "fix-extracted-lightmaps (scenario_path)" will take the cluster bloc
 The command "dump-node-mode-equations (render_model)" will dump equations that can be solved in Wolfram Alpha to get the original position from the inverse position.
 
 ## Multi language strings
-Creating a folder called data_(language code) and placing an identical path for a text file will compile both an english string from data and an additional string from the newly created data_(language code) folder you created.
-You can use this to add multi language support to your string tags. See the markdown below for details on the language codes avaliable. 
+Creating a folder called data_(language code) and placing an identical path for a text file will compile both an English string from data and an additional string from the newly created data_(language code) folder you created.
+You can use this to add multi language support to your string tags. See the markdown below for details on the language codes available. 
 
 ```markdown
 jpn

@@ -3,7 +3,7 @@ desc:       Making render_model tags through converted DAE files.
 template:   document
 nav:        H2Tool>Render Model>DAE Conversion
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 In this guide we will go over exporting the needed skeleton from Adjutant, setting up our mesh to be accepted, doing the weights for our mesh, and the final steps in generating a working render model. 

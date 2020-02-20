@@ -3,7 +3,7 @@ desc:       Making render_model tags.
 template:   document
 nav:        H2Tool>Render Model>Render Model
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 Render models are the tags for the object you see. The mesh of the object to be more exact. There are currently 3 methods for importing your own custom render models. 

@@ -3,7 +3,7 @@ desc:       Preparing animation import files for H2Tool to add new animations bl
 template:   document
 nav:        H2Tool>Animations
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 Let us start by saying that you will need a preexisting model_animation_graph with the skeleton tag block filled in. Either reuse an existing one to add an animation to or modify the skeleton tag block manually to suit your needs.
@@ -13,9 +13,9 @@ the same skeleton setup in 3D editing software as you do in the model_animation_
 
 | Name                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JMA  - animation            | This is what a lot of animations will end up as. A default animation type that stores data necesary for movement. An example of this would be a walking animation. |
-| JMM  - moving               | An animation type that is similar to JMA but leaves out redudant data that is not necessary for the cases it is used in. Examples are FP animations. |
-| JMT  - rotation             | This animation type is an animation inteded for turning animations Examples being how far chief can turn in a direction before he recenters himself. |
+| JMA  - animation            | This is what a lot of animations will end up as. A default animation type that stores data necessary for movement. An example of this would be a walking animation. |
+| JMM  - moving               | An animation type that is similar to JMA but leaves out redundant data that is not necessary for the cases it is used in. Examples are FP animations. |
+| JMT  - rotation             | This animation type is an animation intended for turning animations Examples being how far chief can turn in a direction before he recenters himself. |
 | JMO  - overlay              | This animation type like an additive animation, it adds movement to the base while keeping that movement intact. Example usage of overlay is a small hit animation that plays while you still want to keep a character able to perform it's running animation |
 | JMR  - replacement          | This animation type removes the original animation for the nodes that are animated and plays it's own animation for it. An example for a replacement is a reload animation where you want to make sure the node positions are proper at each part of the reload. In that case you would only animate the upper body, so the lower parts can keep their original base animation that for instance still is a running animation |
 | JMRX - replacement extended | No Idea |
@@ -24,7 +24,7 @@ the same skeleton setup in 3D editing software as you do in the model_animation_
 
 Be aware that the different extension types do have an affect on how the animation functions ingame. Each of them have a purpose and H2Tool will try to steer you in the right direction for what type you will need. 
 The files themselves however have no differences besides extension. In order to export the animation use the cad_animationExporter_compact.mse script for 3DS Max and Blend2Halo2-Animation.py for Blender. 
-Both of these files are found in the Halo_Export.7z in H2Tool Links to export the file. When this is done place it in a folder labled "animations" like you would for collisions or physics. 
+Both of these files are found in the Halo_Export.7z in H2Tool Links to export the file. When this is done place it in a folder labeled "animations" like you would for collisions or physics. 
 Remember that the name of the animation import file will be the name of the animation in the animation tag block. If you need the character ":" in the name such as "device:position" then use a space as spaces in the name are 
 converted to ":". After the file is in then you can just use the animation checkbox in the launcher for compile or type the following command in CMD.
 

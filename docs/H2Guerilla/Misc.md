@@ -3,7 +3,7 @@ desc:       Changes that seem important enough to mention but not important enou
 template:   document
 nav:        H2Guerilla>H2Guerilla Misc
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 ## Advanced Shader View

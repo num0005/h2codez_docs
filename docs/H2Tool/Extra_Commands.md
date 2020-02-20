@@ -3,7 +3,7 @@ desc:       Only one of these work really but lets preserve them anyways.
 template:   document
 nav:        H2Tool>Extra Commands
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 By typing in "h2tool extra-commands" you will get the option to use some of the dev commands in H2Tool. You can use "h2tool extra-commands-list" but here they will be listed and explained if possible.

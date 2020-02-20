@@ -3,7 +3,7 @@ desc:       Notes on making instance geometry with versions of Blender after 2.8
 template:   document
 nav:        Blender Tutorial>Instance Geo 2.8
 percent:    100
-date:       2019/9/30
+date:       2020/02/19
 authors:    General_101
 
 [Halo Export Scripts](http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z) -> Export scripts for your 3D modeling software of choice.

@@ -3,7 +3,7 @@ desc:       Description of the different data types used in HaloScript
 template:   document
 nav:        HaloScript>Data Types
 percent:    70
-date:       2019/04/17
+date:       2020/02/19
 authors:    Num0005
 
 HaloScript like most programming languages includes a number of data types, data types are just a way for the code to tell what sort of data it is working with (e.g. whatever it a sound tag or a string).

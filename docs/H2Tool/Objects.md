@@ -3,7 +3,7 @@ desc:       Using the object or all checkbox in the launcher to make different t
 template:   document
 nav:        H2Tool>Object Tags
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 The object checkbox will create a tag type that you choose from the dropdown if an ASS/JMS file for the render exists. The object will take the name for the object from the parent folder. Below I will show you how to use the all option properly

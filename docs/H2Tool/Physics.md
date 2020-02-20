@@ -3,7 +3,7 @@ desc:       Preparing JMS files for importing with H2Tool to create working phys
 template:   document
 nav:        H2Tool>Physics Model Tags
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 Physics model files are a bit more tricky. You will need to do a couple of things to set these up properly so begin by exporting two files. 
@@ -127,7 +127,7 @@ phy_test
 10
 ```
 ## Convex
-Use the "shitty" exporter for this part. You should see a vertice count along with a ton of vertice translation.
+Use the "shitty" exporter for this part. You should see a vertex count along with a ton of vertex translations.
 ```markdown
 20298
 -25.17850097136 -10.93558594447 1.883197579523
@@ -162,8 +162,8 @@ Should look like this. In order to use this data in our physics model we need to
 0
 0.0000000000    0.0000000000    0.0000000000    1.0000000000
 0.0000000000    0.0000000000    0.0000000000
-(vertice count)
-(vertice list)
+(vertex count)
+(vertex list)
 ```
 Create a convex shape entry in the list as ;CONVEX SHAPE # and give it a name. Parent is the index of the node you are referencing as it it is in the node list. So if l_thigh is the third node listed in your JMSv2 file then parent will be written as 3.
 ```markdown

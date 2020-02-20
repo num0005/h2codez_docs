@@ -3,7 +3,7 @@ desc:       Using multiple instances of the lightmapper to cut down on rasterizi
 template:   document
 nav:        H2Tool>Lightmapper
 percent:    100
-date:       2019/2/10
+date:       2020/02/19
 authors:    General_101
             Num005
 

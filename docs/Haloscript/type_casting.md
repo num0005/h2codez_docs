@@ -3,7 +3,7 @@ desc:       Description of the different data types used in HaloScript
 template:   document
 nav:        HaloScript>Type Casting
 percent:    100
-date:       2019/04/17
+date:       2020/02/19
 authors:    Num0005
 
 HaloScript supports converting data from one type to another, this is called type casting or just casting. Type casting in HaloScript is done automatically when needed but it's good to keep it in mind as not 

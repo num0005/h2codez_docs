@@ -3,7 +3,7 @@ desc:       Introduction to haloscript
 template:   document
 nav:        HaloScript>Intro__-1__
 percent:    70
-date:       2019/04/17
+date:       2020/02/19
 authors:    Num0005
 
 Haloscript (also called BlamScript) is a custom scripting language used in Halo and other games running on the Blam engine. It uses a syntax heavily based on [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)).

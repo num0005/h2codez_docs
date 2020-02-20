@@ -3,7 +3,7 @@ desc:       Abandon all hope ye who enter here.
 template:   document
 nav:        H2Tool>Pathfinding
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 THIS PART IS EXPERIMENTAL. DO NOT EXPECT ANYTHING TOO ADVANCED OR FOR STUFF TO WORK PROPERLY. LOTS OF RESEARCH IN THIS AREA IS STILL NEEDED.

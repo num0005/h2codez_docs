@@ -3,7 +3,7 @@ desc:       Launcher Features
 template:   document
 nav:        H2Codez Launcher>Features
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 ## Shared Removal

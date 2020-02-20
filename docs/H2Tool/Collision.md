@@ -18,8 +18,8 @@ Collision tags in Halo 2 are created by exporting JMS files in UTF-16 format. We
 Start by installing the Blend2Halo2-JMSv2.py script found in the Halo_Export.7z archive to be able to export valid JMS files for Halo 2. This script should do what you need for rigged meshes.
 
 Once you have that script go to your Blender scene and add an armature object. Leave it named Armature as the script specifically looks for an object named this at the moment. Add the amount of bones you need from here.
-Create the mesh and morph untill you have the collision shape you need. Be aware that collisions should be simple and use fewer polys when compared to a render_model. You want as few as possible for memory reasons.
-Once the mesh is modeled you can use weight paint to define what parts belong to what node. Make sure that each seperate piece is only rigged to a single node. Collisions do not take skinned meshes so seperate your collision in
+Create the mesh and morph until you have the collision shape you need. Be aware that collisions should be simple and use fewer polys when compared to a render_model. You want as few as possible for memory reasons.
+Once the mesh is modeled you can use weight paint to define what parts belong to what node. Make sure that each separate piece is only rigged to a single node. Collisions do not take skinned meshes so separate your collision in
 chunks and weight each piece at maximum strength for that node. Once this is done you should be able to export the collision and import it for H2Tool
 
-Place the JMS file inside a folder labeled "collision" and browse the the parent folder that you created the collision folder in using the launcher. Hit compile while having collisions checkmarked.
+Place the JMS file inside a folder labeled "collision" and browse the the parent folder that you created the collision folder in using the launcher. Hit compile while having collisions checked.

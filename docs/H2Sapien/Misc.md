@@ -3,7 +3,7 @@ desc:       Changes that seem important enough to mention but not important enou
 template:   document
 nav:        H2Sapien>H2Sapien Misc
 percent:    100
-date:       2018/12/07
+date:       2020/02/19
 authors:    General_101
 
 ## New Instance
@@ -39,4 +39,3 @@ With H2Codez the file will be properly written for you to view. This file can be
  
 ## In-Game Display Settings
 If you click the scenarios tab in H2Sapien it will reveal a new option in the drop down window called "In-Game Display Settings". This will change your H2Sapien display settings to more closely resemble the ingame options you have set in your Halo 2 copy. This will allow the modder to see things like environment maps and higher game view resolution in H2Sapien.
-
