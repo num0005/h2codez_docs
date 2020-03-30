@@ -128,3 +128,9 @@ Remove lightmap resolution restriction. Enable or disable with a true or false
 
 #####show_all_fields = X
 Show all hidden or unnamed fields in H2Guerilla. Enable or disable with a true or false.
+
+#####force_portable = X
+Use exe path instead of path in registry to make H2EK portable. Enable or disable with a true or false.
+
+#####use_triangle_strip = X
+Force model-render to output meshes using triangle strip instead of triangle list. Enable or disable with a true or false.

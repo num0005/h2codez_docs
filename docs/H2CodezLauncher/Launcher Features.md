@@ -38,14 +38,14 @@ Same as above but run it directly from the launcher instead. Know exactly what y
 ## Model Compile
 This should be pretty simple. This is the menu where you will find everything you need to compile your H2 models. Let us begin with a couple of examples.
  
-If the user has his selection on collision then it will search for a collision folder. If we have our path set to objects\multi\test then it will compile a JMS/JMSv2 file from objects\multi\test\collision.
-Be warned that the outputted file will not be placed in its proper place and will instead be placed outside the destination folder. Just move it back in and it will be fine.
+If the user has his selection on collision then it will search for a collision folder. If we have our path set to objects\multi\test then it will compile a JMS file from objects\multi\test\collision.
  
-If the user has his selection on physics then it will search for a physics folder. If we have our path set to objects\multi\test then it will compile a JMSv2 file from objects\multi\test\physics. 
-This one does get placed in its proper folder so you're done here.
+If the user has his selection on physics then it will search for a physics folder. If we have our path set to objects\multi\test then it will compile a JMS file from objects\multi\test\physics. 
  
 If the user has his selection on render then the next action will depend upon the compile type chosen by the dropdown in the bottom left. If the user has his selection on render and BSP chosen in the bottom left drop down then it will search for a render folder.
-If we have our path set to objects\multi\test then it will compile a ASS/JMS/JMSv2 file from objects\multi\test\render. This one does get placed in its proper folder. If the user has his selection on render and DAE chosen in the bottom left drop down then it we can ignore the previous template we setup as the file can be compiled from anywhere.
- 
+If we have our path set to objects\multi\test then it will compile a ASS/JMS file from objects\multi\test\render. This one does get placed in its proper folder. If the user has his selection on render and DAE chosen in the bottom left drop down then it we can ignore the previous template we setup as the file can be compiled from anywhere.
+
+If the user has his selection on animations then it will search for a animations folder. If we have our path set to objects\multi\test then it will compile a JMA file from objects\multi\test\animations. 
+
 If the user has his selection on all or objects it will run through all of the above and create a model tag and link the results of the previous instructions if any. An object tag will also be created that links the model tag.
 You can use the object type drop down to select an object type.

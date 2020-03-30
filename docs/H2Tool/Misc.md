@@ -73,17 +73,11 @@ A passive change to H2tool's level compiler that allows for more detailed geomet
 ## Dump as XML command
 The command "dump-as-xml (tag_path)" was added to H2Tool to allow you to dump the values in a tag as an XML document. This can help you compare two tags quickly and efficiently using something like the compare feature in Notepad++.
 
-## Fix extracted bitmaps command
-The command "fix-extracted-bitmaps" will load all the bitmaps in your tags folder and repair them if they were extracted and are missing important tag data.
-
 ## Fix extracted lightmaps command
 THIS PART IS EXPERIMENTAL. YOU MAY STILL EXPERIENCE CRASHES WHILE ATTEMPTING TO RELIGHT THE MAP EVEN AFTER THIS IS DONE.
 {: .warning}
 
 The command "fix-extracted-lightmaps (scenario_path)" will take the cluster blocks from SBSP and copy it over to the lightmap cluster block. This will let you relight extracted maps.
-
-## Dump model node equations command
-The command "dump-node-mode-equations (render_model)" will dump equations that can be solved in Wolfram Alpha to get the original position from the inverse position.
 
 ## Multi language strings
 Creating a folder called data_(language code) and placing an identical path for a text file will compile both an English string from data and an additional string from the newly created data_(language code) folder you created.

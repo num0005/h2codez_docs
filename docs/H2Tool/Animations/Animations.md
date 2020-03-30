@@ -1,7 +1,7 @@
 title:      Model Animation Graphs Tags
 desc:       Describing model_animation_graphs tags
 template:   document
-nav:        H2Tool>Animations>Model Animation Graphs
+nav:        H2Tool>Animations>Animation Graphs
 percent:    100
 date:       2020/03/29
 authors:    General_101

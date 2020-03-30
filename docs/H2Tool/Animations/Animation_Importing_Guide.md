@@ -75,12 +75,12 @@ which is 16392.
 
 #####Custom Framerate
 
-The framerate of the scene can be written to the JMA file though by default we always write 30. By checking this option we will instead read the selected framerate the scene has set and write that. You can find the framerate option 
-in the Output Properties tab under the dimensions box as seen in the following image.
+The framerate of the scene can be set by setting the framerate option to one of the preset values in the list. If the value is the CUSTOM value then it instead uses the value specified in the custom framerate option on the 
+export menu.
 
 #####Biped Controller
 
-Purely for testing purposes. Please do not enable unless you are looking into this as well. Version will have to be 16395 for this to actually do anything to the file.
+Purely for testing purposes. Please do not enable unless you are looking into this as well. JMS Version will have to be 16395 for this to actually do anything to the file.
 
 Once you have saved the animation file you can take this to H2Tool to be imported. Created the standard folder structure like you would for a collisions or physics file but instead call this folder "animations". Place your 
 animation file inside of that folder and use the H2CodezLauncher to import it.
