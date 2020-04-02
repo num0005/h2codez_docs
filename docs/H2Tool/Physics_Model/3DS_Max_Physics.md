@@ -1,7 +1,7 @@
 title:      Physics Model Tags
 desc:       Preparing JMS files for importing with H2Tool to create working physics_model tags.
 template:   document
-nav:        H2Tool>Physics Model Tags
+nav:        H2Tool>Physics Model>Physics 3DS Max
 percent:    100
 date:       2020/02/19
 authors:    General_101
