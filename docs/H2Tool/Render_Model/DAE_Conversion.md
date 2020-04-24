@@ -58,8 +58,7 @@ A useful tool for extracting tags from H2V with varying degrees of quality. We w
 
 - Halo 2 Xbox Map Files
 
-Remember that what you decide has to fit the default animations for the object you wish to make. While we can't make custom animations we thankfully have access to all animations in the default game by using the H2V tag
-extractor. For the purposes of this guide you will be given an example model that will reuse the Chief skeleton.
+Remember that what you decide has to fit the default animations for the object you wish to make. For the purposes of this guide you will be given an example model that will reuse the Chief skeleton.
 
 A. (Insert joke about skeletons having a bone to pick with you)
 
