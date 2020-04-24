@@ -131,7 +131,7 @@ selected, select pelvis. Ensure that the weight amount is set to 1 in the top le
 You can enter edit mode and use vertex selection to see the weight applied by different bones. As a quick side note, the max amount of bones that can affect a vertex in Halo 2 is 4. Please ensure that your bone limit is at least
 4 in Blender though by default it should start off as 2 at the most. Continue painting the rest of the areas and linking them to the proper bone using what I have described here. If you are not sure what a particular area
 should be weighted with then you may download the rigend file provided in the links section to help guide you along. After your model is done you will now want to ensure the model origin is in its proper place. Take your 3D
-cursor and make sure it's at 0 0 0 for the XYX then hit SHIFT+CTRL+ALT+C in object mode. Select the option to move the model origin to your 3D cursor. Lets take care of the last part and prepare a file called armature.DAE. I
+cursor and make sure it's at 0 0 0 for the XYZ then hit SHIFT+CTRL+ALT+C in object mode. Select the option to move the model origin to your 3D cursor. Lets take care of the last part and prepare a file called armature.DAE. I
 know it sounds weird but make a new scene and add a UV sphere. Repeat the steps you had before from unwrapping it to assigning it the proper vertex groups. Once this is all done take your weight tool and randomly streak it
 across the object. Ensure every bone gets some action here and make sure to not cover the same area too many times. This can lead to you getting errors. Doing this is required so that the model can have it's nodes added properly.
 
