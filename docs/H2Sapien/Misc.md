@@ -39,3 +39,8 @@ With H2Codez the file will be properly written for you to view. This file can be
  
 ## In-Game Display Settings
 If you click the scenarios tab in H2Sapien it will reveal a new option in the drop down window called "In-Game Display Settings". This will change your H2Sapien display settings to more closely resemble the ingame options you have set in your Halo 2 copy. This will allow the modder to see things like environment maps and higher game view resolution in H2Sapien.
+
+## Unit Playtest
+Under the structure data folder there is a folder named Unit Playtest. Selecting this folder and right clicking will place the biped set to spawn from the first spawn index. So if a player has set the first spawn index to spawn a Dervish biped then unit playtest
+will spawn the biped from the elite block index in globals. After placing it a player can press TAB to get a first person view from the biped they have placed. Using the keys "[" and "]" will switch between all the bipeds viewpoints that exist in the map. 
+Once TAB is pressed the user can then press BACKSPACE to switch to first person then BACKSPACE again to switch to flycam and then BACKSPACE once more to switch to third person view.
