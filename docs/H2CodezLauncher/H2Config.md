@@ -134,3 +134,6 @@ Use exe path instead of path in registry to make H2EK portable. Enable or disabl
 
 #####use_triangle_strip = X
 Force model-render to output meshes using triangle strip instead of triangle list. Enable or disable with a true or false.
+
+#####character_strong_reference = X
+Change weak references in the character tag to regular references as to allow weapons and vehicle tag references to get added and referenced in character tags. Enable or disable with a true or false.
