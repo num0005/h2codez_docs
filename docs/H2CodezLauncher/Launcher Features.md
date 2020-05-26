@@ -49,3 +49,24 @@ If the user has his selection on animations then it will search for a animations
 
 If the user has his selection on all or objects it will run through all of the above and create a model tag and link the results of the previous instructions if any. An object tag will also be created that links the model tag.
 You can use the object type drop down to select an object type.
+
+## ALT Key
+Holding the ALT key while pressing any browse button in the launcher and having no path in the text box will start you in the root of the Halo 2 folder in documents instead of the root of your Halo 2 map editor folder.
+This will also switch the package function to cut the result instead of copying it to your custom maps folder
+
+## Lipsync Compile
+Using this option from the compile sound will allow you to append lipsync data to a compiled .sound tag. The lipsync command takes .LTF files exported from the program Impersonator. Reference the .wav file in the sound path
+text box and the .LTF in the lipsync text box. The .wav file path will be used to get the path to where it would have been outputted in the tags folder.
+
+## Repair Registry
+This option in settings will check your registry to see if the proper keys for running Guerrilla and the launcher.
+
+## Set Permissions
+This option in settings will clear the permissions on your Halo 2 Map Editor folder and the files inside of it and leave an everyone permissions with full access. This will allow you to run the tools without admin and save
+files in the folder properly.
+
+## Language
+This option in settings will change the launcher dialog to one of the available choices. System locale will use your default OS language if it's available as an option. Otherwise it can be manually set.
+
+## Ignore Updates
+This option in settings will let you ignore updates for launcher and H2Codez. You scoundrel!

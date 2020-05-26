@@ -31,8 +31,10 @@ set_temp render_pathfinding_debug (boolean)
 Clicking this button in the scenario tab will make H2Sapien run your scripts so that you may see how they work. Some script functions will not work in H2Sapien and must be tested ingame like ai_place.
  
 ## Decorations
-Changes to H2Sapien so that the render_decorations command is a bit more straight forward. It should now actually do its job and actually enable decorations for the most part. Some won't render due to I assume LOD stuff but their normals should be shown unlike before at the very least after using render_decorators 1.
- 
+render_decorations (boolean)
+
+    description: Render_decorations has been changed to do exactly as it should when enabled. Be aware that you will need to change H2Sapien to use ingame quality(High settings ingame) to actually see the decorators after this. Enable or disable with a 0/false or 1/true
+
 ## Baggage.txt
 Baggage.txt is a txt file that was output upon hitting CTRL+Shift+B in H1Sapien. In H2Sapien this causes the program to crash.
 With H2Codez the file will be properly written for you to view. This file can be used to view the amount of data a certain type of tag is taking up allowing you to easily see issues related to overflow.
@@ -44,3 +46,12 @@ If you click the scenarios tab in H2Sapien it will reveal a new option in the dr
 Under the structure data folder there is a folder named Unit Playtest. Selecting this folder and right clicking will place the biped set to spawn from the first spawn index. So if a player has set the first spawn index to spawn a Dervish biped then unit playtest
 will spawn the biped from the elite block index in globals. After placing it a player can press TAB to get a first person view from the biped they have placed. Using the keys "[" and "]" will switch between all the bipeds viewpoints that exist in the map. 
 Once TAB is pressed the user can then press BACKSPACE to switch to first person then BACKSPACE again to switch to flycam and then BACKSPACE once more to switch to third person view.
+
+## Missing Hierarchy Folders Readded
+H2Sapien is missing various SP related options in the properties panel. The following folders have been readded to the H2Sapien menu through H2Codez.
+
+	Bipeds
+	Vehicles
+	Weapons 
+	Equipment
+	Creatures

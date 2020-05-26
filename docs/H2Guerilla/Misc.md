@@ -43,3 +43,13 @@ row colored blue will allow you to reveal more information about that section fo
 ## Sound Editing
 Sound tags imported from CE can be used in H2EK by compiling them in H1Tool with the XBADPCM codec. Editing them in H2Guerilla would normally result in a crash however this should be solved as of the latest H2Codez update.
 Issue was a crash caused by a template in the sound effect block that would be solved by disabling template view.
+
+## Vertex Shaders
+Vertex tags with an empty compiled shader block will instead compile the HLSL in the code block. This allows you to code your own vertex shaders and can be reloaded in real time in H2Sapien. An H2Codez compiled in debug mode 
+will ignore the empty compiled shader requirement and recompile the HLSL anyways. The compiled shader is only done in memory so no permanent edits will be done to the tag in the map editor folder.
+
+D3DCOMPILE_DEBUG flag in debug release may cause crashes with certain shaders. Be aware of this while debugging.
+{: .warning}
+
+## Missing Enum Options Readded
+Scenario type and wgit tags were missing various default or H2V specific options. These have been reintroduced in H2Codez.

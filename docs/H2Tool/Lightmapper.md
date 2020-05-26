@@ -26,6 +26,7 @@ If you already know how to use the lightmaps command you can skip this part. Gra
 - medium
 - high
 - super
+- custom
 
 Both scenario path and BSP name don't include the file extension. 
 {: .warning}
@@ -35,6 +36,23 @@ Make sure you don't have duplicate BSPs between your tags folder in program file
 
 There is a 32 MB limit for the lightmap bitmap in H2V. If your generated bitmap is larger than this then it will be corrupted and won't work. 
 {: .warning}
+
+## Custom 
+
+Custom is an option added by H2Codez that has you can guess by the name allows you to tune the lightmapper options available to the user instead of just using the preset values provided to you by the editing kit. The options
+are the following.
+
+| Name                              | Description                                                                                                                                                            |
+| ----------------------------------| -----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| is_checkboard = X                 | Boolean value that sets lighting to checkerboard. Cheapest option out of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting. |
+| is_direct_only = X                | Boolean value that sets lighting to direct only.  2nd cheapest option of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting. |
+| is_draft = X                      | Boolean value that sets lighting to draft. 3rd cheapest option out of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting.    |
+| main_monte_carlo_setting = X      | Int value that defines the sample count for the lightmap.                                                                                                              |
+| proton_count = X                  | Int value that defines the photon count for the lightmap                                                                                                               |
+| secondary_monte_carlo_setting = X | Int value that defines the antialiasing count for the lightmap                                                                                                         |
+| unk7 = X                          | Float value that defines the gather distances for the lightmap                                                                                                         |                                                                                                       |
+
+These settings can be configured in the custom_lightmap_quality.conf. Open this file in any text editor. Default values provided in this file are for super quality lighting.
 
 ## Automatic
 
