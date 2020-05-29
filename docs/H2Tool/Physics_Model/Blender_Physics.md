@@ -32,11 +32,19 @@ dimensions of the cube.
 
 ![](assets/PhysicsImportingStep3.png)
 
+Have the origin of this object set to the center of geometry. Important to export these objects properly.
+
 ## Capsules
 Capsule objects are represented by cylinder objects in Blender. The full height of the object is taken from the Z axis and the radius is taken from the x. The X and Y axis should be uniform to get the best representation of the
 object on how it would look ingame. The height of the capsule can't be less than the radius.
 
 ![](assets/PhysicsImportingStep4.png)
+
+Make sure to have the origin of the object set to the center bottom of your cylinder object like the following image.
+
+![](assets/PhysicsImportingStep16.png)
+
+This is necessary since Halo 2 extends a pill from the bottom up.
 
 ## Convex
 Convex objects take the vertices of the object to create a sort of bounding radius around the object you are generating. These objects have to be convex. Below we will give an example of a non convex object.
