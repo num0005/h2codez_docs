@@ -48,7 +48,7 @@ So lets take set our starting position for the animation. Begin by going down to
 
 ![](assets/AnimationImportingStep4.png)
 
-How long your timeline is will determine how fast or slow your animation will play ingame. Think about how you want your animation to look while choosing these values. You can always come back and change it later if you need more 
+How long your timeline is will determine how many frames your animation will play for. Think about how you want your animation to look while choosing these values. You can always come back and change it later if you need more 
 frames. Using the left or right arrow on your keyboard, go to your first frame in the timeline. In our case it will be frame one. Now select your Armature and set object mode to "Pose Mode" then hit the "A" key to select all bones. 
 Press the "I" key to bring up the "Insert Keyframe" menu and from here go ahead and do location, rotation, and scale for frame 0. Move on to another frame and mess with the location, rotation, and scale of specific bones to achieve 
 the movement you want. You can press "Spacebar" to play the current animation in your scene and see how it is coming together. After you have set a few keyframes you should have something that looks like the image below. 
@@ -59,10 +59,6 @@ If you need to change the position of a keyframe you can go down to the dope she
 If you have gotten this far then you likely have an animation that is ready to export. All you need to do at this point is go to "File" and select "Export" and select "Halo Animation File (.jma)". From here an export menu will show 
 up with a couple of options.
 
-#####Encoding
-
-This option will let you change the encoding Halo CE by default takes UTF-8 files and Halo 2 Vista takes UTF-16LE. H2Codez however can read the file properly no matter the file encoding so you do not need to mess with this.
-
 #####Extension
 
 This will let you change the extension of the file for importing animations for different uses. Refer to the extension description above for more info on this. 
@@ -72,6 +68,10 @@ This will let you change the extension of the file for importing animations for 
 This will change the file version of the exported JMA. 16390-16392 are the maximum for CE though only 16392 is functional for import in Tool.exe. Halo 2 Vista can take 16390-16395 and only 16392-16395 is functional for import in 
 H2Tool.exe. 16395 is the last version made and has support for biped controller data from 3DS Max but the Blender exporter does not currently support this feature. You do not need to mess with this and can leave it at default 
 which is 16392.
+
+#####Game
+
+Should be pretty self explanatory. Just choose the game you are exporting for from the dropdown menu. Controls how certain values are written and sets the proper file encoding.
 
 #####Custom Framerate
 
