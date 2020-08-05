@@ -1,0 +1,20 @@
+Name,Description,Example
+object_list,"A list of objects, one with only one object can be created the same way as object_name",
+unit_seat_mapping,,
+trigger_volume,,
+cutscene_flag,,
+cutscene_camera_point,,
+cutscene_title,,
+cutscene_recording,,
+device_group,,
+ai,"Reference to an AI starting location, squad or squad group.","squad1, squadgroup, squad_alpha/4"
+ai_command_list,Obsolete ,N/A
+ai_command_script,,
+ai_behavior,AI behaviour,"engage, fight, shoot_corpse"
+ai_orders,,
+starting_profile,,
+conversation,Element of the AI Conversations tag block in scenario,
+structure_bsp,,
+navpoint,,
+point_reference,Point set and point in Scripting data in scenario,point_set/point_b
+hud_message,"Obsolete, used to be a message in the hud_message_text tag, commands that supported it are no longer functional.",

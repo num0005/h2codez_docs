@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>HaloScript Data Types</title>
+
+
+    <script src="../../lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../lib/bootstrap-4.0.0.min.js"></script>
+    <script src="../../lib/highlight-9.12.0.min.js"></script>
+    <script src="../../lib/bootbox-4.4.0.min.js"></script>
+
+    <link rel="stylesheet" href="../../lib/highlightjs-9.12.0.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0.min.css">
+
+    <link rel="stylesheet" href="../../default.css">
+
+    
+    
+
+</head>
+    <body>
+
+        <!-- Header Bar -->
+        <header class="navbar navbar-light page-headbar">
+            <button class="navbar-toggler page-togglesidebar" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <!-- Project Name -->
+                
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="#" onclick="window.print();">Print</a>
+                
+            </nav>
+        </header>
+
+        <!-- Side Bar -->
+        <aside class="page-sidebar">
+
+            
+            
+
+            
+
+            <ul class="tree-nav tree-root">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../home.html"><span>Home</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Blender Tutorial">
+                    <label for="#nav-Blender Tutorial">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Blender Tutorial</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial post 2.8.html"><span>Instance Geo 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial pre 2.8.html"><span>Instance Geo 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. post 2.8.html"><span>Map Making 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. pre 2.8.html"><span>Map Making 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Environment\Blender Plugins.html"><span>Plugin Install</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-DAEConverter">
+                    <label for="#nav-DAEConverter">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>DAEConverter</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../DAEConverter\Commands.html"><span>Commands</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Codez Launcher">
+                    <label for="#nav-H2Codez Launcher">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Codez Launcher</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\H2Config.html"><span>Config</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\Launcher Features.html"><span>Features</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Guerilla">
+                    <label for="#nav-H2Guerilla">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Guerilla</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Guerilla\Misc.html"><span>H2Guerilla Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Sapien">
+                    <label for="#nav-H2Sapien">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Sapien</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Sapien\Misc.html"><span>H2Sapien Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Tool">
+                    <label for="#nav-H2Tool">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Tool</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Extra_Commands.html"><span>Extra Commands</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\H2Tool_Links.html"><span>H2Tool Links</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper.html"><span>Lightmapper</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper_Setting_Specs.html"><span>Lightmapper Specs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Misc.html"><span>H2Tool Misc</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Objects.html"><span>Object Tags</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Pathfinding.html"><span>Pathfinding</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Sounds.html"><span>Sounds</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Animations">
+                    <label for="#nav-Animations">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Animations</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animations.html"><span>Animation Graphs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animation_Importing_Guide.html"><span>Animation Importing</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\JMA_File_Spec.html"><span>JMA File Spec</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Collision Model">
+                    <label for="#nav-Collision Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Collision Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\3DS_Max_Collisions.html"><span>Collision 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\Blender_Collisions.html"><span>Collision Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Physics Model">
+                    <label for="#nav-Physics Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Physics Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\3DS_Max_Physics.html"><span>Physics 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\Blender_Physics.html"><span>Physics Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Render Model">
+                    <label for="#nav-Render Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Render Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\BSP_Conversion.html"><span>BSP Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\DAE_Conversion.html"><span>DAE Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\render_model.html"><span>Render Model</span></a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox"  id="#nav-HaloScript">
+                    <label for="#nav-HaloScript">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>HaloScript</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\intro.html"><span>Intro</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\data_types.html"><span>Data Types</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\type_casting.html"><span>Type Casting</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Install">
+                    <label for="#nav-Install">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Install</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\DAEConverter.html"><span>DAEConverter</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\Installation.html"><span>H2Codez</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Misc Files">
+                    <label for="#nav-Misc Files">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Misc Files</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Misc Files\Misc Files.html"><span>Misc Files</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Notes">
+                    <label for="#nav-Notes">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Notes</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Notes\Notes.html"><span>Notes</span></a>
+                </li>
+                </ul>
+                </li>
+                
+            </ul>
+
+            
+            
+        </aside>
+
+        <!-- MAIN PAGE CONTENT -->
+        <section class="page-main">
+            <div class="page-content">
+                
+
+    
+    <div class="page-header">
+        <h1 class="display-4">HaloScript Data Types </h1>
+        <p class="lead">Description of the different data types used in HaloScript</p>
+        <p>
+            <span class="version">V</span>
+            
+            <img src="http://www.gravatar.com/avatar/8db46e1171d4c157266da17947061e1f?s=100&amp;r=g&amp;d=retro" class="avatar" alt="Num0005" title="Num0005" />
+            
+            <small>last updated <span>5 months ago</span> on <span>2020/02/19</span></small>
+        </p>
+
+        
+            <hr class="my-4">
+            <p>This document is approximately 70% complete.
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:  70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                </p>
+        
+    </div>
+    <br/>
+    
+
+    <div class="page-md">
+        <p>HaloScript like most programming languages includes a number of data types, data types are just a way for the code to tell what sort of data it is working with (e.g. whatever it a sound tag or a string).</p>
+<p>These can be broken into 3 main groups: internal, basic and complex.</p>
+<h4 id="internal">Internal</h4>
+<p>There are 4 types that are mostly used internally by the system: <code>unparsed</code>, <code>special form</code>, <code>function name</code> and <code>passthrough</code>.
+Out of these the only one of note for us is <code>passthrough</code> as it can be "cast" or converted to any other type. See <a href="type_casting.html">Type Casting</a> for more.</p>
+<h3 id="basic">Basic</h3>
+<p>These are the basic types you would expect in a scripting language and are used by a lot of different functions.</p>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>void</td><td>Special type used to mean nothing, only as a function return type.</td></tr><tr><td>boolean</td><td>True or false</td></tr><tr><td>real</td><td>A float point number (1500.2, -1.53, 3.14159, etc)</td></tr><tr><td>short</td><td>A whole number between -32767 and 32767</td></tr><tr><td>long</td><td>A whole number between -2147483647 and 2147483647</td></tr><tr><td>string</td><td>Text ("hello", "test", "120")</td></tr><tr><td>string_id</td><td>Another way to reference a string-like value, sometimes used for localization</td></tr><tr><td>script</td><td>Name of another script (cinematic_fade_from_black, welcome, etc)</td></tr></tbody></table><h3 id="complex">Complex</h3>
+<p>Most HaloScript types belong in this category, these are mostly types added for use in a specific function. It can be further broken into multiple subsets: tags, enums, objects, object names and misc.</p>
+<h4 id="tags">Tags</h4>
+<p>These reference a specific tag, the compiler gets the tag datum and adds the tag to the References block in the scenario. </p>
+<p class="info">The HaloScript compiler should check the tag type is correct,  but this check appears to be disabled by specifying the full path with extension
+(<code>sound\ui\shield_hit.sound</code>, instead of <code>sound\ui\shield_hit</code>)</p>
+<p>The following types are tags/tag refs:</p>
+<ul>
+<li><code>sound</code></li>
+<li><code>effect</code></li>
+<li><code>damage</code></li>
+<li><code>looping_sound</code> </li>
+<li><code>animation_graph</code> </li>
+<li><code>damage_effect</code></li>
+<li><code>object_defintion</code></li>
+<li><code>bitmap</code></li>
+<li><code>shader</code></li>
+<li><code>render model</code></li>
+<li><code>structure definition</code></li>
+<li><code>lightmap definition</code></li>
+<li><code>style</code></li>
+</ul>
+<p class="info">Style is only a tag ref in H2Codez, it's non-functional in the release HEK and wasn't quite a tag ref in the Bungie HEK.</p>
+<h4 id="enums">Enums</h4>
+<p>Enums short for enumerated are used for named values.</p>
+<table><thead><tr><th>Name</th><th>Description</th><th>Value List</th></tr></thead><tbody><tr><td>game_difficulty</td><td>How hard the game is</td><td>Easy, Normal, Heroic, Legendary</td></tr><tr><td>team</td><td>What team an AI or player is on, used in campaign</td><td>default, player, human, covenant, flood, sentinel, heretic, prophet, unused8, unused9, ... unused15</td></tr><tr><td>actor_type</td><td>unknown (code removed)</td><td>N/A</td></tr><tr><td>hud_corner</td><td>Related to old HUD</td><td>N/A</td></tr><tr><td>model_state</td><td>TODO</td><td>TODO</td></tr><tr><td>network_event</td><td>unknown (code removed)</td><td>N/A</td></tr></tbody></table><h4 id="objects-object-names">Objects / Object Names</h4>
+<p>Objects and Object names are the same with one minor difference, objects can be set to <code>NONE</code> meaning no object and object names can't. So you can use <code>sound_impulse_start</code> without an object but not <code>object_create</code></p>
+<p>The full list of object/object name types is:</p>
+<ul>
+<li>object</li>
+<li>unit</li>
+<li>vehicle</li>
+<li>weapon</li>
+<li>device</li>
+<li>scenery</li>
+</ul>
+<h4 id="miscellaneous">Miscellaneous</h4>
+<p>The remaining types that don't easily fit into any of the above.</p>
+<p><table class="csv-table table thead-light table-hover full-width" source="assets/misc_types.csv"><thead><th>Name</th><th>Description</th><th>Example</th></thead><tr><td>object_list</td><td>A list of objects, one with only one object can be created the same way as object_name</td><td></td></tr><tr><td>unit_seat_mapping</td><td></td><td></td></tr><tr><td>trigger_volume</td><td></td><td></td></tr><tr><td>cutscene_flag</td><td></td><td></td></tr><tr><td>cutscene_camera_point</td><td></td><td></td></tr><tr><td>cutscene_title</td><td></td><td></td></tr><tr><td>cutscene_recording</td><td></td><td></td></tr><tr><td>device_group</td><td></td><td></td></tr><tr><td>ai</td><td>Reference to an AI starting location, squad or squad group.</td><td>squad1, squadgroup, squad_alpha/4</td></tr><tr><td>ai_command_list</td><td>Obsolete </td><td>N/A</td></tr><tr><td>ai_command_script</td><td></td><td></td></tr><tr><td>ai_behavior</td><td>AI behaviour</td><td>engage, fight, shoot_corpse</td></tr><tr><td>ai_orders</td><td></td><td></td></tr><tr><td>starting_profile</td><td></td><td></td></tr><tr><td>conversation</td><td>Element of the AI Conversations tag block in scenario</td><td></td></tr><tr><td>structure_bsp</td><td></td><td></td></tr><tr><td>navpoint</td><td></td><td></td></tr><tr><td>point_reference</td><td>Point set and point in Scripting data in scenario</td><td>point_set/point_b</td></tr><tr><td>hud_message</td><td>Obsolete, used to be a message in the hud_message_text tag, commands that supported it are no longer functional.</td><td></td></tr></table></p>
+    </div>
+
+
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // Sidebar functionality.
+        $('.page-togglesidebar').click(function(){
+            $('body').toggleClass('page-sidebar-closed')
+        });
+
+        // Apply code highlighting.
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+        // Apply CSS to all tables.
+        $('.page-md table').addClass('table thead-light table-hover');
+
+        // Set images to lightbox.
+        $('.page-md img').on('click', function(event) {
+            var imgsrc = $(this).attr('src');
+            bootbox.alert({
+                message: '<img src="'+imgsrc+'" style="width:100%; height:auto;"></img>',
+                backdrop: true,
+                closeButton: false,
+                size: 'large'
+            });
+        });
+    });
+    </script>
+
+
+    
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // // Apply CSS specific to a table in a *parts* heading.
+        // $('.page-md #parts + table')
+        //     .addClass('parts')
+        // //     .addClass('table thead-light table-hover')
+        // //     //.css('position', 'absolute')
+        //     //.css('width', '60%');
+    });
+
+</script>
+
+
+</html>

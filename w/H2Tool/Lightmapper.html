@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>Multi Instance Lightmapper</title>
+
+
+    <script src="../../lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../lib/bootstrap-4.0.0.min.js"></script>
+    <script src="../../lib/highlight-9.12.0.min.js"></script>
+    <script src="../../lib/bootbox-4.4.0.min.js"></script>
+
+    <link rel="stylesheet" href="../../lib/highlightjs-9.12.0.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0.min.css">
+
+    <link rel="stylesheet" href="../../default.css">
+
+    
+    
+
+</head>
+    <body>
+
+        <!-- Header Bar -->
+        <header class="navbar navbar-light page-headbar">
+            <button class="navbar-toggler page-togglesidebar" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <!-- Project Name -->
+                
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="#" onclick="window.print();">Print</a>
+                
+            </nav>
+        </header>
+
+        <!-- Side Bar -->
+        <aside class="page-sidebar">
+
+            
+            
+
+            
+
+            <ul class="tree-nav tree-root">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../home.html"><span>Home</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Blender Tutorial">
+                    <label for="#nav-Blender Tutorial">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Blender Tutorial</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial post 2.8.html"><span>Instance Geo 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial pre 2.8.html"><span>Instance Geo 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. post 2.8.html"><span>Map Making 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. pre 2.8.html"><span>Map Making 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Environment\Blender Plugins.html"><span>Plugin Install</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-DAEConverter">
+                    <label for="#nav-DAEConverter">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>DAEConverter</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../DAEConverter\Commands.html"><span>Commands</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Codez Launcher">
+                    <label for="#nav-H2Codez Launcher">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Codez Launcher</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\H2Config.html"><span>Config</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\Launcher Features.html"><span>Features</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Guerilla">
+                    <label for="#nav-H2Guerilla">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Guerilla</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Guerilla\Misc.html"><span>H2Guerilla Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Sapien">
+                    <label for="#nav-H2Sapien">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Sapien</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Sapien\Misc.html"><span>H2Sapien Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox"  id="#nav-H2Tool">
+                    <label for="#nav-H2Tool">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Tool</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Extra_Commands.html"><span>Extra Commands</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\H2Tool_Links.html"><span>H2Tool Links</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper.html"><span>Lightmapper</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper_Setting_Specs.html"><span>Lightmapper Specs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Misc.html"><span>H2Tool Misc</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Objects.html"><span>Object Tags</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Pathfinding.html"><span>Pathfinding</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Sounds.html"><span>Sounds</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Animations">
+                    <label for="#nav-Animations">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Animations</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animations.html"><span>Animation Graphs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animation_Importing_Guide.html"><span>Animation Importing</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\JMA_File_Spec.html"><span>JMA File Spec</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Collision Model">
+                    <label for="#nav-Collision Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Collision Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\3DS_Max_Collisions.html"><span>Collision 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\Blender_Collisions.html"><span>Collision Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Physics Model">
+                    <label for="#nav-Physics Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Physics Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\3DS_Max_Physics.html"><span>Physics 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\Blender_Physics.html"><span>Physics Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Render Model">
+                    <label for="#nav-Render Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Render Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\BSP_Conversion.html"><span>BSP Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\DAE_Conversion.html"><span>DAE Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\render_model.html"><span>Render Model</span></a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-HaloScript">
+                    <label for="#nav-HaloScript">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>HaloScript</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\intro.html"><span>Intro</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\data_types.html"><span>Data Types</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\type_casting.html"><span>Type Casting</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Install">
+                    <label for="#nav-Install">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Install</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\DAEConverter.html"><span>DAEConverter</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\Installation.html"><span>H2Codez</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Misc Files">
+                    <label for="#nav-Misc Files">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Misc Files</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Misc Files\Misc Files.html"><span>Misc Files</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Notes">
+                    <label for="#nav-Notes">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Notes</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Notes\Notes.html"><span>Notes</span></a>
+                </li>
+                </ul>
+                </li>
+                
+            </ul>
+
+            
+            
+        </aside>
+
+        <!-- MAIN PAGE CONTENT -->
+        <section class="page-main">
+            <div class="page-content">
+                
+
+    
+    <div class="page-header">
+        <h1 class="display-4">Multi Instance Lightmapper </h1>
+        <p class="lead">Using multiple instances of the lightmapper to cut down on rasterizing time.</p>
+        <p>
+            <span class="version">V</span>
+            
+            <img src="http://www.gravatar.com/avatar/585207db08475e9012646546d677fac4?s=100&amp;r=g&amp;d=retro" class="avatar" alt="General_101" title="General_101" />
+            
+            <img src="http://www.gravatar.com/avatar/81f60deec1d3c3efece7fbd8ec382f4c?s=100&amp;r=g&amp;d=retro" class="avatar" alt="Num005" title="Num005" />
+            
+            <small>last updated <span>5 months ago</span> on <span>2020/02/19</span></small>
+        </p>
+
+        
+    </div>
+    <br/>
+    
+
+    <div class="page-md">
+        <p>Lightmapping in Halo 2 by default is a bit of a pain. Some maps you make could take days to finish on Super. This makes expansive maps with many different light sources be almost impossible to test quickly without doing tricks like
+cutting out the BSP you are testing or using lower quality lightmaps. At the time of current writing the lightmapper farm technique used during the development of Halo 2 has been brought back to a usable state. Here is how to use it.</p>
+<p class="tip">Limit the max number of lightmapping instances on one PC to the number of threads it supports for best performance. Leave one thread free if you want to use your PC for anything else during lightmapping.</p>
+<h3 id="getting-started">Getting started</h3>
+<p>If you already know how to use the lightmaps command you can skip this part. Grab the scenario path and BSP name then choose your lightmap quality. Your choice is the following from lowest to highest.</p>
+<ul>
+<li>checkerboard</li>
+<li>direct_only</li>
+<li>draft_low</li>
+<li>draft_medium</li>
+<li>draft_high</li>
+<li>low</li>
+<li>medium</li>
+<li>high</li>
+<li>super</li>
+<li>custom</li>
+</ul>
+<p class="warning">Both scenario path and BSP name don't include the file extension. </p>
+<p class="warning">Make sure you don't have duplicate BSPs between your tags folder in program files and your tags folder in documents. Duplicates will cause your lightmaps to be unusable.</p>
+<p class="warning">There is a 32 MB limit for the lightmap bitmap in H2V. If your generated bitmap is larger than this then it will be corrupted and won't work. </p>
+<h3 id="custom">Custom</h3>
+<p>Custom is an option added by H2Codez that has you can guess by the name allows you to tune the lightmapper options available to the user instead of just using the preset values provided to you by the editing kit. The options
+are the following.</p>
+<table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>is_checkboard = X</td><td>Boolean value that sets lighting to checkerboard. Cheapest option out of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting.</td></tr><tr><td>is_direct_only = X</td><td>Boolean value that sets lighting to direct only.  2nd cheapest option of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting.</td></tr><tr><td>is_draft = X</td><td>Boolean value that sets lighting to draft. 3rd cheapest option out of the bunch. Only enable one of the first 3 options or disable all 3 if doing release lighting.</td></tr><tr><td>main_monte_carlo_setting = X</td><td>Int value that defines the sample count for the lightmap.</td></tr><tr><td>proton_count = X</td><td>Int value that defines the photon count for the lightmap</td></tr><tr><td>secondary_monte_carlo_setting = X</td><td>Int value that defines the antialiasing count for the lightmap</td></tr><tr><td>unk7 = X</td><td>Float value that defines the gather distances for the lightmap</td></tr></tbody></table><p>These settings can be configured in the custom_lightmap_quality.conf. Open this file in any text editor. Default values provided in this file are for super quality lighting.</p>
+<h3 id="automatic">Automatic</h3>
+<p>Automatic doesn't support all the things possible with manual but it's a lot easier to use and is recommended for anyone that just wants to lightmap faster.</p>
+<p>Begin by typing in the following command and set instance count to the number of instances you want it to start</p>
+<pre><code>h2tool lightmaps-local-multi-process (scenario path) (BSP name) (lightmapper quality) (instance count)
+</code></pre>
+
+<p>Once you run the command you should see it start a few tool instances and tell you it's waiting for them to exit, at this point you just wait.</p>
+<p class="tip">Instance count can't be less than 2 as that doesn't make sense.</p>
+<p class="warning">Make sure you have enough free memory for all the tool instances you are running before you start</p>
+<h3 id="manual">Manual</h3>
+<p>This is the more complex method but it's the only one that allows you to use all the features Bungie could.</p>
+<p>Begin by typing in the following command</p>
+<pre><code>h2tool lightmaps-slave (scenario path) (BSP name) (lightmapper quality) (instance count) (instance index)
+</code></pre>
+
+<p>The instance count is how many instances of tool you want splitting the work starting at 0. Choose a number.</p>
+<p>Now here is the most important part. The instance index of the command. If you typed an instance count of 3 then you want to type the command 3 times with an instance index for each value. Here is what this would look like.</p>
+<pre><code>h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation medium 3 0
+
+h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation medium 3 1
+
+h2tool lightmaps-slave scenarios\multi\halo\coagulation\coagulation coagulation medium 3 2
+</code></pre>
+
+<p>You should now have 3 tool windows each denoted with an index in the title name of the program. After these are all done it should have generated files labeled</p>
+<pre><code>(scenario name)_(BSP name)_lightmap_radiance_bitmaps_(#).bitmap.
+</code></pre>
+
+<p>Now it's time to merge them all using the following command.</p>
+<pre><code>h2tool lightmaps-master (scenario path) (BSP name) (lightmapper quality) (instance count)
+</code></pre>
+
+<p>You want to have the instance count match the number you ran previously otherwise you will get an incomplete lightmap bitmap. Here is an example of what it looks like completed.</p>
+<pre><code>h2tool lightmaps-master scenarios\multi\halo\coagulation\coagulation coagulation medium 3 
+</code></pre>
+
+<h3 id="forkclone-experimental">Fork/clone (experimental)</h3>
+<h5 id="technical-background">Technical background</h5>
+<p>The lightmapping process on all instances/slaves is largely the same up to the rasterizing stage at which different instances generate radiance bitmaps for different parts of the BSP. This results in a lot of redundant processing if multiple instances are run on one system. This is an attempt to work around that by creating "clones" or "forks" of an initial lightmapping process when it reaches the rasterizing stage. It's quite unstable as cloning a process isn't officially supported on windows.</p>
+<h4 id="usage">Usage</h4>
+<p>Largely the same as manual but you only run two commands. See that section for more detail.</p>
+<p>1.</p>
+<pre><code>h2tool lightmaps-slave-fork (scenario path) (BSP name) (lightmapper quality) (instance count)
+</code></pre>
+
+<p>2.</p>
+<pre><code>h2tool lightmaps-master (scenario path) (BSP name) (lightmapper quality) (instance count)
+</code></pre>
+
+<p class="danger">This is an unstable method and may crash without warning or worse. Data corruption or a system crash are quite unlikely but can't be ruled out.</p>
+    </div>
+
+
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // Sidebar functionality.
+        $('.page-togglesidebar').click(function(){
+            $('body').toggleClass('page-sidebar-closed')
+        });
+
+        // Apply code highlighting.
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+        // Apply CSS to all tables.
+        $('.page-md table').addClass('table thead-light table-hover');
+
+        // Set images to lightbox.
+        $('.page-md img').on('click', function(event) {
+            var imgsrc = $(this).attr('src');
+            bootbox.alert({
+                message: '<img src="'+imgsrc+'" style="width:100%; height:auto;"></img>',
+                backdrop: true,
+                closeButton: false,
+                size: 'large'
+            });
+        });
+    });
+    </script>
+
+
+    
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // // Apply CSS specific to a table in a *parts* heading.
+        // $('.page-md #parts + table')
+        //     .addClass('parts')
+        // //     .addClass('table thead-light table-hover')
+        // //     //.css('position', 'absolute')
+        //     //.css('width', '60%');
+    });
+
+</script>
+
+
+</html>

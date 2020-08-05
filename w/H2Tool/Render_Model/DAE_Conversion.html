@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>Render Model DAE</title>
+
+
+    <script src="../../../lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../../lib/bootstrap-4.0.0.min.js"></script>
+    <script src="../../../lib/highlight-9.12.0.min.js"></script>
+    <script src="../../../lib/bootbox-4.4.0.min.js"></script>
+
+    <link rel="stylesheet" href="../../../lib/highlightjs-9.12.0.min.css">
+    <link rel="stylesheet" href="../../../lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="../../../lib/font-awesome-4.7.0.min.css">
+
+    <link rel="stylesheet" href="../../../default.css">
+
+    
+    
+
+</head>
+    <body>
+
+        <!-- Header Bar -->
+        <header class="navbar navbar-light page-headbar">
+            <button class="navbar-toggler page-togglesidebar" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <!-- Project Name -->
+                
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="#" onclick="window.print();">Print</a>
+                
+            </nav>
+        </header>
+
+        <!-- Side Bar -->
+        <aside class="page-sidebar">
+
+            
+            
+
+            
+
+            <ul class="tree-nav tree-root">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../home.html"><span>Home</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Blender Tutorial">
+                    <label for="#nav-Blender Tutorial">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Blender Tutorial</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Blender Guides\Blender Instance Geometry Tutorial post 2.8.html"><span>Instance Geo 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Blender Guides\Blender Instance Geometry Tutorial pre 2.8.html"><span>Instance Geo 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Blender Guides\Blender Map Making Tutorial. post 2.8.html"><span>Map Making 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Blender Guides\Blender Map Making Tutorial. pre 2.8.html"><span>Map Making 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Blender Guides\Blender Environment\Blender Plugins.html"><span>Plugin Install</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-DAEConverter">
+                    <label for="#nav-DAEConverter">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>DAEConverter</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../DAEConverter\Commands.html"><span>Commands</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Codez Launcher">
+                    <label for="#nav-H2Codez Launcher">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Codez Launcher</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2CodezLauncher\H2Config.html"><span>Config</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2CodezLauncher\Launcher Features.html"><span>Features</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Guerilla">
+                    <label for="#nav-H2Guerilla">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Guerilla</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Guerilla\Misc.html"><span>H2Guerilla Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Sapien">
+                    <label for="#nav-H2Sapien">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Sapien</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Sapien\Misc.html"><span>H2Sapien Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox"  id="#nav-H2Tool">
+                    <label for="#nav-H2Tool">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Tool</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Extra_Commands.html"><span>Extra Commands</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\H2Tool_Links.html"><span>H2Tool Links</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Lightmapper.html"><span>Lightmapper</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Lightmapper_Setting_Specs.html"><span>Lightmapper Specs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Misc.html"><span>H2Tool Misc</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Objects.html"><span>Object Tags</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Pathfinding.html"><span>Pathfinding</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Sounds.html"><span>Sounds</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Animations">
+                    <label for="#nav-Animations">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Animations</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Animations\Animations.html"><span>Animation Graphs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Animations\Animation_Importing_Guide.html"><span>Animation Importing</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Animations\JMA_File_Spec.html"><span>JMA File Spec</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Collision Model">
+                    <label for="#nav-Collision Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Collision Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Collision_Model\3DS_Max_Collisions.html"><span>Collision 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Collision_Model\Blender_Collisions.html"><span>Collision Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Physics Model">
+                    <label for="#nav-Physics Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Physics Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Physics_Model\3DS_Max_Physics.html"><span>Physics 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Physics_Model\Blender_Physics.html"><span>Physics Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox"  id="#nav-Render Model">
+                    <label for="#nav-Render Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Render Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Render_Model\BSP_Conversion.html"><span>BSP Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Render_Model\DAE_Conversion.html"><span>DAE Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../H2Tool\Render_Model\render_model.html"><span>Render Model</span></a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-HaloScript">
+                    <label for="#nav-HaloScript">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>HaloScript</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Haloscript\intro.html"><span>Intro</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Haloscript\data_types.html"><span>Data Types</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Haloscript\type_casting.html"><span>Type Casting</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Install">
+                    <label for="#nav-Install">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Install</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Install\DAEConverter.html"><span>DAEConverter</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Install\Installation.html"><span>H2Codez</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Misc Files">
+                    <label for="#nav-Misc Files">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Misc Files</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Misc Files\Misc Files.html"><span>Misc Files</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Notes">
+                    <label for="#nav-Notes">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Notes</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../../Notes\Notes.html"><span>Notes</span></a>
+                </li>
+                </ul>
+                </li>
+                
+            </ul>
+
+            
+            
+        </aside>
+
+        <!-- MAIN PAGE CONTENT -->
+        <section class="page-main">
+            <div class="page-content">
+                
+
+    
+    <div class="page-header">
+        <h1 class="display-4">Render Model DAE </h1>
+        <p class="lead">Making render_model tags through converted DAE files.</p>
+        <p>
+            <span class="version">V</span>
+            
+            <img src="http://www.gravatar.com/avatar/585207db08475e9012646546d677fac4?s=100&amp;r=g&amp;d=retro" class="avatar" alt="General_101" title="General_101" />
+            
+            <small>last updated <span>5 months ago</span> on <span>2020/02/19</span></small>
+        </p>
+
+        
+    </div>
+    <br/>
+    
+
+    <div class="page-md">
+        <p>In this guide we will go over exporting the needed skeleton from Adjutant, setting up our mesh to be accepted, doing the weights for our mesh, and the final steps in generating a working render model.</p>
+<h2 id="links">Links</h2>
+<p><a href="http://forum.halomaps.org/index.cfm?page=topic&amp;topicID=45590">Adjutant</a></p>
+<p>An asset extractor for various Halo games. This is the program we will be using to extract skeletons from the Halo 2 Xbox(H2X) version of the game. There is no program that can do this for Halo 2 Vista(H2V) so this is how we
+need to go about it. Just scroll down the page to find that tinyurl link that should take you to a Mega download.</p>
+<p><a href="https://haloce3.com/xmf/">Halo Maps Files</a></p>
+<p>A link to various map files from various Halo Games. Keep in mind you will need to at least have all the resource maps for Halo 2 to extract things properly. This includes shared.map, single_player_shared.map, and mainmenu.map.
+I would recommend downloading every Halo 2 map and placing them all in the same folder for complete access to the Halo 2 assets available to us.</p>
+<p><a href="https://github.com/Project-Cartographer/DaeConverter">DAE Converter</a></p>
+<p>The source code of the program we are using to build our models.</p>
+<p><a href="https://www.blender.org/">Blender</a></p>
+<p>The modeling program we will be using in this tutorial. Also the only one that will work for sure with our DAE converter. 3DS Max has not been tested cause 3DS Max is for uncool and unloved kids.</p>
+<p><a href="http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/rigbegin.blend">Example Model</a></p>
+<p>Our example model for beginners. We will use this to hopefully show you the way around the program</p>
+<p><a href="http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/rigend.blend">End Result of Example Model</a></p>
+<p>Our example model that we made except finished if you do not understand a part and need a visual representation.</p>
+<p><a href="http://www.h2maps.net/Sources/H2EK%20Source/Manual/DAEConverter/armature.blend">End Result of Example Armature</a></p>
+<p>The armature we will need for our skeleton. When you make armatures for different skeletons follow this setup</p>
+<p><a href="https://halo2.online/threads/tag-extractor-for-magical-doctor-wizard-researchers-only.2076/#post-10618">H2V Tag Extractor</a></p>
+<p>A useful tool for extracting tags from H2V with varying degrees of quality. We will be using this to extract animations that were not included in H2EK by default.</p>
+<p><strong><em>Needed Files</em></strong></p>
+<ul>
+<li>
+<p>At least 3DS Max 2013</p>
+</li>
+<li>
+<p>Blender</p>
+</li>
+<li>
+<p>H2EK</p>
+</li>
+<li>
+<p>H2Codez</p>
+</li>
+<li>
+<p>Adjutant</p>
+</li>
+<li>
+<p>Halo 2 Xbox Map Files</p>
+</li>
+</ul>
+<p>Remember that what you decide has to fit the default animations for the object you wish to make. For the purposes of this guide you will be given an example model that will reuse the Chief skeleton.</p>
+<p>A. (Insert joke about skeletons having a bone to pick with you)</p>
+<p>Let us get our skeleton to reuse for our Chief model. You will want to open up Adjutant and then hit File-&gt;New. Browse for the Halo 2 Xbox maps you downloaded and open up shared.map. Once it is open right click on the file list
+and hit extract all. Select a locations for the content of shared to be dumped. Once that folder is made lets make the necessary plugins to import the models we just dumped. Click on Tools-&gt;Generate MaxScripts and click on AMF
+importer. Do not use EMF as it is a deprecated format. Place the resulting script in an easy access location. Once that is done we can now open up 3DS Max and head on over to the utilities section. Should look like a button
+with a wrench icon on the right. From there click on MaxScript to reveal a new menu on the button. Click run script and find the AMF importer.mse script you generated. This should now show a new menu with a button labeled load
+model file on the top. Click on this and browse on over to that folder where you dumped the shared.map assets. Go ahead and look for this file found in</p>
+<p>"Shared Map Asset Dump\objects\characters\masterchief\masterchief.amf"</p>
+<p>Now the rest of the menu will have new buttons that you can mess around with. Go ahead and click import model and it should start generating the model from your favorite game that is totally not anything after Halo 3 ODST. This
+part isn't needed but if you want to you can assign the bitmaps from a new screen that should appear when the model is done being imported. To add the bitmaps just browse on over and select the folder you dumped the shared
+assets in and click ok. Assuming you left all the Adjutant settings at default you can just click apply and you will be good to go.</p>
+<p>Now comes for the final part. Close those two menus and export the result as an FBX. Once that is done you can open up Blender and import the FBX to have the model but more importantly the skeleton for the model. You should see
+chief and a bunch of triangular looking sticks coming out of him. This is the bones that manipulate the mesh for the spartan model. Go ahead and click on the object in the object list labeled armature and set the scale on the
+x,y, and z to 1. Then hit your a key twice to select everything and hit CTRL+A. A menu should show up with an option to "apply rotation and scale". Click on that and then you are done! Save this file somewhere for later use.
+Lets move on to the main show here.</p>
+<p>B. Paint some happy little trees up in this mesh</p>
+<p>Go ahead and download that example model in links. We are going to use this to learn how to both prepare our models and rig them for ingame use. When you open up the .blend file you should see something that looks like this.</p>
+<p><img alt="" src="assets/DAEConversionStep1.png" /></p>
+<p>Now lets prepare the model for ingame use before rigging. First select the model object and changed from object mode to edit mode, change the selection mode from edge selection to face selection, and press A to select all faces
+at once. Should look something like this.</p>
+<p><img alt="" src="assets/DAEConversionStep2.png" /></p>
+<p>Once you have it selected go ahead and click on mesh-&gt;faces-&gt;triangulate faces. You can find it here if you don't understand.</p>
+<p><img alt="" src="assets/DAEConversionStep3.png" /></p>
+<p>Now lets make a UV unwrap for our mesh here. Click on mesh-&gt;uv unwrap-&gt;smart uv unwrap. You should get a prompt when you click on this. Just click ok and continue.</p>
+<p><img alt="" src="assets/DAEConversionStep4.png" /></p>
+<p>Go ahead and assign a material to our mesh by clicking on the materials tab and click new. Name the material whatever you wish.</p>
+<p><img alt="" src="assets/DAEConversionStep5.png" /></p>
+<p>Now lets begin getting our vertex groups in order. Currently the chief skeleton has already been given to you for this demonstration but in future models of your own making you will have to provide the armature yourself by
+copying it from an extracted model. Now left click the model object and shift+left click on the armature to have it be selected as well. Press CTRL+P to parent the object to the armature. Make sure to click armature deform with
+empty groups as shown in the provided image. This will fill out the vertex group with all the bones the armature has.</p>
+<p><img alt="" src="assets/DAEConversionStep6.png" /></p>
+<p>Now select the model and go to the vertex groups tab. See that list from pelvis to r_thumb2? That should be a full list of all the bones we have in our armature and the way we will order our nodes. In Halo 2, two things matter
+to get working animations on our object. Node order and parent/child/sibling nodes. Node order is what order the nodes are organized in the node tag block. So pelvis is 0 and l_thigh is 1 which means pelvis should be the first
+ node in our vertex group and l_thigh should be the second. Parent/child/sibling nodes references to the drop down menus under the node name that can be changed to reference other nodes in the
+list as a parent/child/sibling node. If you match the node order you should not have to worry about this. Now open the masterchief.render_model in H2Guerilla and examine the node order found there. Make sure the order of the
+nodes matches the vertex group order. After this is done we can begin our rig process. It is at this moment that you can also hide the armature by clicking the eye icon in the object list or hitting the H key for easy viewing
+of the model.</p>
+<p><img alt="" src="assets/DAEConversionStep7.png" /></p>
+<p>Now go to your model and enter edit mode. Select a face on the pelvis area of the model and hit CTRL+L. This should highlight all the faces that are connected to that piece of mesh. From here change from edit mode to weight mode.
+Now you may be wondering why do that before going into weight mode. By doing this you can enable weight paint masking. Doing so will only allow you to "paint" weight on the part of the mesh you have selected.
+Enable this option by clicking on the mask option after entering weight paint mode found here.</p>
+<p><img alt="" src="assets/DAEConversionStep8.png" /></p>
+<p>Now go to the vertex group tab and select the proper vertex group. In general this is up to you to decide which one is best based on the location of the mesh and the closest or intended bone. In this case considering what we have
+selected, select pelvis. Ensure that the weight amount is set to 1 in the top left. You can also disable view clipping to paint through the mesh to cover more ground quickly. Should look something like this when you are done.</p>
+<p><img alt="" src="assets/DAEConversionStep9.png" /></p>
+<p>You can enter edit mode and use vertex selection to see the weight applied by different bones. As a quick side note, the max amount of bones that can affect a vertex in Halo 2 is 4. Please ensure that your bone limit is at least
+4 in Blender though by default it should start off as 2 at the most. Continue painting the rest of the areas and linking them to the proper bone using what I have described here. If you are not sure what a particular area
+should be weighted with then you may download the rigend file provided in the links section to help guide you along. After your model is done you will now want to ensure the model origin is in its proper place. Take your 3D
+cursor and make sure it's at 0 0 0 for the XYZ then hit SHIFT+CTRL+ALT+C in object mode. Select the option to move the model origin to your 3D cursor. Lets take care of the last part and prepare a file called armature.DAE. I
+know it sounds weird but make a new scene and add a UV sphere. Repeat the steps you had before from unwrapping it to assigning it the proper vertex groups. Once this is all done take your weight tool and randomly streak it
+across the object. Ensure every bone gets some action here and make sure to not cover the same area too many times. This can lead to you getting errors. Doing this is required so that the model can have it's nodes added properly.</p>
+<p>C. It's bullshit. I did not forget to change the model classification. I did not. Oh, hi Himanshu.</p>
+<p>Now that you're here I hope you fully rigged that model and the armature model you'll be needing. This section will go over importing our model and making the adjustments needed to prepare it for ingame usage.
+First begin by exporting your rigged model and the armature as separate DAE files with the Master Chief skeleton included. Lets head on over to the data directory of our map editor. The way you want to setup your folder
+structure is simple. Begin by creating your parent folder and naming it what you want the name of the generated render_model to be. Inside this folder we will place our armature.DAE file here.</p>
+<p class="warning">THIS FILE NEEDS TO BE NAMED AS SUCH OTHERWISE THE PROCESS WILL FAIL AND YOU WILL GET EITHER A CRASH OR NO NODES!</p>
+<p>After that you want to create a new folder inside your parent folder. Name this folder the name of the region and then inside this region folder create another folder. Name it what you want the permutation to be named.
+Inside the permutation folder place the DAE file of our model. You can place multiple models in this folder named L1-L6 to make LOD sections. Once you have this setup you can use the DAEConverter to compile the model.
+Begin by opening the launcher and going to the model compiling tab. Hit the browse button and select the folder that contains the armature.DAE file. Select render in the model type and then change the dropdown from BSP to DAE.
+Now you can hit the compile button and assuming you did everything correctly then it should compile a working model. The result will be generated in the same folder where the armature.DAE file is. After this is done you can
+copy your compiled model to the tags folder for editing. Go ahead and open it in H2Guerilla. Lets fill in the remaining things that the converter does not take care of.</p>
+<p><img alt="" src="assets/DAEConversionStep12.png" /></p>
+<p>Set the geometry classification to something that applies. Make sure it is not worldspace or it will crash or not show up at all. Switching it to rigid or rigid boned is where it ends. If you switch it to skinned then you need
+to provide a value for "Opaque Max Nodes/Vertex" or "Transparent Max Nodes/Vertex". They type depends on how many shaders of transparent or opaque are in the parts. Just make sure the one that applies isn't at zero. You can
+get the value from the original or see what the max number of bones affecting a vertex is.</p>
+    </div>
+
+
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // Sidebar functionality.
+        $('.page-togglesidebar').click(function(){
+            $('body').toggleClass('page-sidebar-closed')
+        });
+
+        // Apply code highlighting.
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+        // Apply CSS to all tables.
+        $('.page-md table').addClass('table thead-light table-hover');
+
+        // Set images to lightbox.
+        $('.page-md img').on('click', function(event) {
+            var imgsrc = $(this).attr('src');
+            bootbox.alert({
+                message: '<img src="'+imgsrc+'" style="width:100%; height:auto;"></img>',
+                backdrop: true,
+                closeButton: false,
+                size: 'large'
+            });
+        });
+    });
+    </script>
+
+
+    
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // // Apply CSS specific to a table in a *parts* heading.
+        // $('.page-md #parts + table')
+        //     .addClass('parts')
+        // //     .addClass('table thead-light table-hover')
+        // //     //.css('position', 'absolute')
+        //     //.css('width', '60%');
+    });
+
+</script>
+
+
+</html>

@@ -1,0 +1,51 @@
+version: 1.0.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+init:
+- ps: >-
+    [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Python36\Scripts;C:\Python36\", [EnvironmentVariableTarget]::Machine)
+
+
+    Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+environment:
+  access_token:
+    secure: f+8UkDkVKr26Z5TGDAh1boib1V+cZJzohun2GpTBzSHEhQ1eOq9GooMS6JcK0JKj
+install:
+- cmd: >-
+    set PATH=%PATH%;C:\Python36\Scripts;C:\Python36\
+
+
+    C:\Python36\python -m ensurepip --default-pip
+
+    C:\Python36\python -m pip install docnado==1.0.4
+build_script:
+- cmd: >-
+    set PATH=%PATH%;C:\Python36\Scripts;C:\Python36\
+
+
+    docnado --html ../output
+on_success:
+- cmd: >-
+    git config --global credential.helper store
+
+
+    git clone https://github.com/num0005/h2codez_docs.git ../deploy
+
+    cd ../deploy
+
+    git checkout --orphan gh-pages
+
+    robocopy ../output ../deploy /E /is /it & cmd /c "exit /b 0"
+
+
+    git add .
+
+    git config --global user.email "num0005@appveyor.deploy"
+
+    git config --global user.name "Site Deployer"
+
+    git commit -m "site deployment" -n --no-gpg-sign
+
+    git push origin gh-pages --force

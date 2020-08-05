@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>Blender Map Making 2.79</title>
+
+
+    <script src="../../lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../lib/bootstrap-4.0.0.min.js"></script>
+    <script src="../../lib/highlight-9.12.0.min.js"></script>
+    <script src="../../lib/bootbox-4.4.0.min.js"></script>
+
+    <link rel="stylesheet" href="../../lib/highlightjs-9.12.0.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0.min.css">
+
+    <link rel="stylesheet" href="../../default.css">
+
+    
+    
+
+</head>
+    <body>
+
+        <!-- Header Bar -->
+        <header class="navbar navbar-light page-headbar">
+            <button class="navbar-toggler page-togglesidebar" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <!-- Project Name -->
+                
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="#" onclick="window.print();">Print</a>
+                
+            </nav>
+        </header>
+
+        <!-- Side Bar -->
+        <aside class="page-sidebar">
+
+            
+            
+
+            
+
+            <ul class="tree-nav tree-root">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../home.html"><span>Home</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox"  id="#nav-Blender Tutorial">
+                    <label for="#nav-Blender Tutorial">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Blender Tutorial</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial post 2.8.html"><span>Instance Geo 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Instance Geometry Tutorial pre 2.8.html"><span>Instance Geo 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. post 2.8.html"><span>Map Making 2.8</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Map Making Tutorial. pre 2.8.html"><span>Map Making 2.79</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Blender Guides\Blender Environment\Blender Plugins.html"><span>Plugin Install</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-DAEConverter">
+                    <label for="#nav-DAEConverter">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>DAEConverter</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../DAEConverter\Commands.html"><span>Commands</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Codez Launcher">
+                    <label for="#nav-H2Codez Launcher">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Codez Launcher</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\H2Config.html"><span>Config</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2CodezLauncher\Launcher Features.html"><span>Features</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Guerilla">
+                    <label for="#nav-H2Guerilla">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Guerilla</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Guerilla\Misc.html"><span>H2Guerilla Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Sapien">
+                    <label for="#nav-H2Sapien">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Sapien</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Sapien\Misc.html"><span>H2Sapien Misc</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-H2Tool">
+                    <label for="#nav-H2Tool">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>H2Tool</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Extra_Commands.html"><span>Extra Commands</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\H2Tool_Links.html"><span>H2Tool Links</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper.html"><span>Lightmapper</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Lightmapper_Setting_Specs.html"><span>Lightmapper Specs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Misc.html"><span>H2Tool Misc</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Objects.html"><span>Object Tags</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Pathfinding.html"><span>Pathfinding</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Sounds.html"><span>Sounds</span></a>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Animations">
+                    <label for="#nav-Animations">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Animations</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animations.html"><span>Animation Graphs</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\Animation_Importing_Guide.html"><span>Animation Importing</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Animations\JMA_File_Spec.html"><span>JMA File Spec</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Collision Model">
+                    <label for="#nav-Collision Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Collision Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\3DS_Max_Collisions.html"><span>Collision 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Collision_Model\Blender_Collisions.html"><span>Collision Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Physics Model">
+                    <label for="#nav-Physics Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Physics Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\3DS_Max_Physics.html"><span>Physics 3DS Max</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Physics_Model\Blender_Physics.html"><span>Physics Blender</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Render Model">
+                    <label for="#nav-Render Model">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Render Model</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\BSP_Conversion.html"><span>BSP Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\DAE_Conversion.html"><span>DAE Conversion</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../H2Tool\Render_Model\render_model.html"><span>Render Model</span></a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-HaloScript">
+                    <label for="#nav-HaloScript">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>HaloScript</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\intro.html"><span>Intro</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\data_types.html"><span>Data Types</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Haloscript\type_casting.html"><span>Type Casting</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Install">
+                    <label for="#nav-Install">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Install</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\DAEConverter.html"><span>DAEConverter</span></a>
+                </li>
+                
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Install\Installation.html"><span>H2Codez</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Misc Files">
+                    <label for="#nav-Misc Files">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Misc Files</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Misc Files\Misc Files.html"><span>Misc Files</span></a>
+                </li>
+                </ul>
+                </li>
+                
+
+                
+                <li>
+                    <input type="checkbox" checked id="#nav-Notes">
+                    <label for="#nav-Notes">
+                        <i class="tree-icon fa fa-fw fa-chevron-down"></i>
+                        <span>Notes</span>
+                    </label>
+                    <ul class="tree-nav">
+
+                
+                <li class="tree-leaf">
+                    
+                        <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    
+                    <a href="../Notes\Notes.html"><span>Notes</span></a>
+                </li>
+                </ul>
+                </li>
+                
+            </ul>
+
+            
+            
+        </aside>
+
+        <!-- MAIN PAGE CONTENT -->
+        <section class="page-main">
+            <div class="page-content">
+                
+
+    
+    <div class="page-header">
+        <h1 class="display-4">Blender Map Making 2.79 </h1>
+        <p class="lead">Notes on making maps with versions of Blender before 2.8</p>
+        <p>
+            <span class="version">V</span>
+            
+            <img src="http://www.gravatar.com/avatar/585207db08475e9012646546d677fac4?s=100&amp;r=g&amp;d=retro" class="avatar" alt="General_101" title="General_101" />
+            
+            <small>last updated <span>5 months ago</span> on <span>2020/02/19</span></small>
+        </p>
+
+        
+    </div>
+    <br/>
+    
+
+    <div class="page-md">
+        <p><a href="http://www.h2maps.net/Tools/PC/Export%20Scripts/Halo_Export.7z">Halo Export Scripts</a> -&gt; Export scripts for your 3D modeling software of choice.</p>
+<p><a href="https://www.blender.org/">Blender Program</a> -&gt; The Blender modeling program itself.</p>
+<p><a href="http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Tutorial.blend">End Result</a> -&gt; The end product of this tutorial for Blender for you to examine and compare.</p>
+<p><a href="http://www.h2maps.net/Sources/H2EK%20Source/Manual/Blender/Spartan.zip">Spartan Model</a> -&gt; Spartan model that should be to scale with the ingame player.</p>
+<p>Hello!</p>
+<p>My name is General_101 and welcome to my Halo 2 Blender tutorial. This is a guide for those who want to make functional Halo 2 maps with Blender. This guide will assume the reader has some basic idea on how to navigate the program.
+We will begin by mimicking the map building section of the help tutorial that comes with the map editor but replacing terms used for 3DS Max with that of blender.</p>
+<p>Start Blender and you should see your Scene which should look something like this at start by default.</p>
+<p><img alt="" src="assets\2.79\1A.png" /></p>
+<p>This will be the space where we begin the work for our map in Blender.
+From here you can delete the cube by selecting it with RIGHT MOUSE CLICK or deselecting/selecting everything by hitting A on your keyboard then hitting X and selecting the prompt to delete.
+If you do not want a cube then you can delete the object and select a new mesh from the add menu as seen here.</p>
+<p><img alt="" src="assets\2.79\1B.png" /></p>
+<p>If you do add a mesh keep in mind that will be added wherever your 3D cursor is on your scene.
+If you want to recenter it then hit n to bring up the properties panel and zero location on the transform panel like so.</p>
+<p><img alt="" src="assets\2.79\1C.png" /></p>
+<p><img alt="" src="assets\2.79\1D.png" /></p>
+<p>Let us start with a simple box map in this tutorial for simplicity's sake.</p>
+<p>Begin by adding a cube mesh and a UV sphere to your scene. Make sure to center both of these objects in the properties panel.
+Once you have added it set the scale of the cube to 100 on the x, y, and z. We want room for our players to fight in after all.</p>
+<p>TIP: If have trouble seeing your complete mesh due to it not being rendered at a certain distance then change the clip distance. Scroll down in your properties panel and find clip then change end to be a lot higher than 1000
+000 like 99999 or something.</p>
+<p>Your scene should now look something like this.</p>
+<p><img alt="" src="assets\2.79\1E.png" /></p>
+<p>Now that was have our basic level let us begin to create our frame node. The frame node is an object that is the origin of our map and should have all objects you want exported connected to it.
+Take great caution to ensure all objects you want exported are linked to the frame node or they will not be exported.
+Take the UV sphere you created earlier and change the name of it by double clicking the current name sphere and rename it b_levelroot.
+The object must be named b_levelroot as this is the name of the object Halo 2 uses to orient the level. Not doing this properly will result in issues.
+Make sure to not move your frame node after you start to setup your player and weapon spawns as this could lead to things being displaced.</p>
+<p>TIP: One good way to check out a selection is to hit the zoom key. Simply hit . on your keyboard and it will zoom in on whatever you have selected.</p>
+<p>Now let us link the level to the frame node by making the frame node a parent of the level.
+Begin by selecting your cube then using SHIFT+RIGHT MOUSE CLICK in the scene or simply click cube in the and then SHIFT+LEFT MOUSE CLICK in the outliner.
+Remember that...
+Orange with white text = Parent
+Orange with black text = Child
+The last object selected will always be the parent.
+Now hit the hotkey CTRL+P and select Object. Your steps should look something like this.</p>
+<p><img alt="" src="assets\2.79\1F.png" /></p>
+<p><img alt="" src="assets\2.79\1G.png" /></p>
+<p>You should now notice that b_levelroot can be expanded to reveal the child which is our cube object.
+Let us select our cube and continue working on our level. If you were to somehow export the level now without errors the first thing you would notice is that textures do not appear.
+This is because by default the normals are facing outwards on our mesh.
+To fix this we must flip the normals on the mesh so that we may see our textures properly ingame.</p>
+<p>3DS Max Translated: Converting a mesh to an editable poly in 3DS Max is pretty much the same thing as selecting a mesh and going from object mode to edit mode.</p>
+<p>Select your cube and change the interaction mode to edit mode. This will allow you to modify the faces of the cube individually and extensively. Make sure to also select face selection. This is what it should look like.</p>
+<p><img alt="" src="assets\2.79\1H.png" /></p>
+<p>One fantastic way to see which way normals are facing is to enable a little option in the properties window. Scroll down and select Display Face Normals As Lines. Change size to 1 to easily see the way normals are facing. This is what it should look like.</p>
+<p><img alt="" src="assets\2.79\1I.png" /></p>
+<p>Now your can press the hotkey A to deselect or select all faces in an object. Select all and then go to Mesh -&gt; Normals -&gt; Recalculate Inside/Flip Normals. It should look like this.</p>
+<p><img alt="" src="assets\2.79\1J.png" /></p>
+<p><img alt="" src="assets\2.79\1K.png" /></p>
+<p><img alt="" src="assets\2.79\1M.png" /></p>
+<p>Lets add materials for our level to use as textures. Go to the materials tab in Blender and add a new Material labeled "+sky" Change the diffuse of it to a color that makes it stand out.
+Create a second material and label it "f_im flat_light_scratchy" then give it a different diffuse color. Now select the +sky material and then select a face and hit assign. Assign the second material to the rest of the level. Look at this next image and compare to your scene.</p>
+<p><img alt="" src="assets\2.79\1N.png" /></p>
+<p>Now we have to unwrap our mesh so that we can change the size and location of the textures. Select your entire mesh by hitting A and then you have two ways to unwrap it.
+On a simple object like ours a simple Smart UV Project will do.
+On more complex shapes such as that of standard Halo maps we can use a mixture of marked seams and unwrap.
+We will use Smart UV Project for now and the second method will be displayed after this. After you have selected your mesh then go down to Mesh-&gt;UV Unwrap-&gt; Smart UV Project. The accompanying images will show you where.</p>
+<p><img alt="" src="assets\2.79\1O.png" /></p>
+<p>You will be greeted by a prompt box but the default options are fine for our current setup so just hit ok. Add a new window and change the the editor to UV/Image Editor like in the following images.</p>
+<p><img alt="" src="assets\2.79\1P.png" /></p>
+<p><img alt="" src="assets\2.79\1Q.png" /></p>
+<p>Now lets add a texture so we can more easily see what to expect ingame.</p>
+<p><img alt="" src="assets\2.79\1R.png" /></p>
+<p>This is the same texture we are calling when we made the second material. Go ahead and save it and then apply it by going to your material and adding a texture file like so.
+Go to the materials tab and select f_im flat_light_scratchy then go into the textures tab.</p>
+<p><img alt="" src="assets\2.79\1S.png" /></p>
+<p><img alt="" src="assets\2.79\1T.png" /></p>
+<p>Add a new texture and then click open and select the texture you downloaded previously. Once your material has a texture then go into your UV editor and select the texture from there like so.</p>
+<p><img alt="" src="assets\2.79\1U.png" /></p>
+<p>Make sure to enable textured solid in the properties panel under shading in your 3D editor to see the texture. Should end up here.</p>
+<p><img alt="" src="assets\2.79\1V.png" /></p>
+<p>Ignore any faces that may display a texture that wasn't meant to be applied and focus on the faces that do have the material assigned as in the next image.</p>
+<p><img alt="" src="assets\2.79\1W.png" /></p>
+<p>In the UV editor then select these faces and then hit the hotkey S to scale and hotkey G to move the UV until the texture looks right to you.
+Ensure that you are in face selection mode in the UV editor as I will show you now.</p>
+<p><img alt="" src="assets\2.79\1X.png" /></p>
+<p>Now if this was 3DS Max you would be about ready to export the final product. This is Blender though and a few extra steps must be taken. These are crucial for the map to export properly so follow them closely.
+Let use first zoom in on our b_levelroot using the hotkey . to zoom in.
+Every single object you make in Blender must have its faces be converted to triangles. This is important as the exporter and Halo 2 will not accept it otherwise. Select your b_levelroot and go into edit mode then hit hotkey A to ensure it selects all.
+Go to Mesh-&gt;Faces-&gt;Triangulate Faces. Your UV sphere should be made out of triangles now.</p>
+<p><img alt="" src="assets\2.79\1Y.png" /></p>
+<p>Every single object must also be unwrapped including the b_levelroot mesh. Simply select all faces and hit Smart UV Unwrap. This is all you have to do for the b_levelroot to be done with UVs.
+All objects including the b_levelroot must have a material even if it has no texture. Add a new material to the b_levelroot and assign it. This is all you have to do here.
+The final result should look something like this. Disable textures solids to see diffuse again.</p>
+<p><img alt="" src="assets\2.79\1Z.png" /></p>
+<p>Do the same for all other objects in the scene. One this is done you can then go to File-&gt;Export-Halo 2 asset. You should see no errors show up on the top right. Your ASS file should be ready and accepted by tool.</p>
+    </div>
+
+
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // Sidebar functionality.
+        $('.page-togglesidebar').click(function(){
+            $('body').toggleClass('page-sidebar-closed')
+        });
+
+        // Apply code highlighting.
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+        // Apply CSS to all tables.
+        $('.page-md table').addClass('table thead-light table-hover');
+
+        // Set images to lightbox.
+        $('.page-md img').on('click', function(event) {
+            var imgsrc = $(this).attr('src');
+            bootbox.alert({
+                message: '<img src="'+imgsrc+'" style="width:100%; height:auto;"></img>',
+                backdrop: true,
+                closeButton: false,
+                size: 'large'
+            });
+        });
+    });
+    </script>
+
+
+    
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // // Apply CSS specific to a table in a *parts* heading.
+        // $('.page-md #parts + table')
+        //     .addClass('parts')
+        // //     .addClass('table thead-light table-hover')
+        // //     //.css('position', 'absolute')
+        //     //.css('width', '60%');
+    });
+
+</script>
+
+
+</html>
